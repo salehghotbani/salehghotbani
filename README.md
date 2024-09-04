@@ -1,4 +1,4 @@
-# Hi, I'm [Your Name] 👋
+# Hi, I'm Saleh 👋
 
 I am a frontend developer specializing in React.js and Chakra UI. I enjoy creating clean, responsive, and user-friendly web applications.
 
