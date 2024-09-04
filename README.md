@@ -25,11 +25,11 @@ I am a frontend developer specializing in React.js and Chakra UI. I enjoy creati
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 
 ### 🔥 My GitHub Activity:
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=your-username&theme=dark)](https://git.io/streak-stats)
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=salehghotbani&theme=dark)](https://git.io/streak-stats)
 
 **Latest Blog Posts**:
 - [Post 1](Link)
 - [Post 2](Link)
 
 📈 **My GitHub Stats**:
-![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true&theme=radical)
+![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=salehghotbani&show_icons=true&theme=radical)
