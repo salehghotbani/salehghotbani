@@ -1,16 +1,18 @@
-## Hi there 👋
+# Hi, I'm [Your Name] 👋
 
-<!--
-**salehghotbani/salehghotbani** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I am a frontend developer specializing in React.js and Chakra UI. I enjoy creating clean, responsive, and user-friendly web applications.
 
-Here are some ideas to get you started:
+- 🔭 I’m currently working on: [Project Name](Link to Project)
+- 🌱 I’m learning: Machine Learning and Deep Learning
+- 📫 How to reach me: [Email] | [LinkedIn] | [Twitter]
+  
+### 🛠 Tech Stack
+- **Frontend**: React.js, Chakra UI, JavaScript
+- **Backend**: Node.js, FastAPI
+- **Tools**: Git, GitHub, VS Code
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🌟 Projects
+- [Project 1](Link to repo) - Short description of the project.
+- [Project 2](Link to repo) - Short description of the project.
+  
+![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true)
