@@ -16,3 +16,6 @@ I am a frontend developer specializing in React.js and Chakra UI. I enjoy creati
 - [Project 2](Link to repo) - Short description of the project.
   
 ![Your GitHub Stats](https://github-readme-stats.vercel.app/api?username=salehghotbani&show_icons=true)
+
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Chakra UI](https://img.shields.io/badge/Chakra%20UI-319795?style=for-the-badge&logo=chakraui&logoColor=white)
