@@ -12,6 +12,7 @@ web applications.
 
 - **Frontend**: React.js
 - **Backend**: FastAPI
+- **Computer Vision Researcher**
 
 ![ReactJS](https://img.shields.io/badge/ReactJS-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi&logoColor=61DAFB)
