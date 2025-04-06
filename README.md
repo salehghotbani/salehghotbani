@@ -3,7 +3,7 @@
 I am a fullstack developer specializing in React.js and Fastapi. I enjoy creating clean, responsive, and user-friendly
 web applications.
 
-- 🔭 I’m currently working on: [Voice To Text](https://github.com/salehghotbani/voice-to-text)
+- 🔭 I’m currently working on: [YOLO Football Detection](https://github.com/salehghotbani/Football_Yolo11_Supervision_Roboflow)
 - 🌱 I’m learning: 3D Sites
 
 [//]: # (- 📫 How to reach me: [Email] | [LinkedIn] | [Twitter])
