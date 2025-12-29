@@ -12,8 +12,8 @@ I'm a passionate **[Web developer]** with experience in **[Ai Researcher]**. I l
 ## My Skills 🧠
 
 ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Fastapi]([https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black](https://img.shields.io/badge/fastapi-109989?style=for-the-badge&logo=FASTAPI&logoColor=white))
-![Pytorch]([https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white))
+![Fastapi](https://img.shields.io/badge/fastapi-109989?style=for-the-badge&logo=FASTAPI&logoColor=white)
+![Pytorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 
 ## Featured Projects 💻
 
