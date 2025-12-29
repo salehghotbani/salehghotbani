@@ -4,10 +4,9 @@
 
 ## About Me 🚀
 
-I'm a passionate **[Web developer]** with experience in **[Ai Researcher]**. I love tackling complex problems, learning new skills, and collaborating with diverse teams to create innovative solutions.
+I'm a passionate **Web developer** with experience in **Ai Researcher**. I love tackling complex problems, learning new skills, and collaborating with diverse teams to create innovative solutions.
 
-- 🌱 Currently learning: **[new technologies or skills you're currently learning]**
-- 🔭 Researching on: **[AI]**
+- 🔭 Researching on: **AI**
 
 ## My Skills 🧠
 
