@@ -21,4 +21,4 @@ I'm a passionate **[Web developer]** with experience in **[Ai Researcher]**. I l
 
 ## Get in Touch 📬
 
-- **[LinkedIn]**(https://www.linkedin.com/in/ghotbani/)
+- [LinkedIn](https://www.linkedin.com/in/ghotbani/)
