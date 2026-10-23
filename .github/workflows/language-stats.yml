@@ -2,7 +2,7 @@ name: Refresh language stats
 
 on:
   schedule:
-    - cron: '17 * * * *'
+    - cron: '17 0 * * *' # Daily at 03:47 Tehran time (00:17 UTC).
   workflow_dispatch:
   push:
     branches: [main]
