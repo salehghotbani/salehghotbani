@@ -53,17 +53,6 @@ I'm **Saleh Ghotbani**, a researcher and web developer. My public work brings to
 
 The bars show **code volume, not proficiency**. GitHub reports notebook files as **Jupyter Notebook**. Forks and this profile repository are excluded.
 
-<details>
-<summary>Data source and updates</summary>
-
-The chart uses the public GitHub languages API for each included repository. The exact byte counts and retrieval date are saved in [the data snapshot](assets/language-stats.json).
-
-The [refresh workflow](https://github.com/salehghotbani/salehghotbani/actions/workflows/language-stats.yml) checks public repositories every hour and publishes changes automatically. GitHub scheduling and language analysis can introduce a delay after a push. Unchanged data does not create a new commit; the displayed date is the last data update.
-
-You can also run the workflow manually from its Actions page. For a local refresh, use `python scripts/update-language-stats.py` with Python 3.10 or newer. No external packages are required; local use does not require a token.
-
-</details>
-
 ## Tools I work with
 
 **AI & data** &nbsp; Python · PyTorch · YOLO · Jupyter
