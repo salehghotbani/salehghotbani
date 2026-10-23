@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Saleh Ghotbani</title>
+  <desc id="desc">AI research and interactive web development. A dark navy banner with a mint network and an orange wireframe cube.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1280" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101E2C"/>
+      <stop offset="1" stop-color="#07121D"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(1030 190) rotate(90) scale(300 370)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#224B4B" stop-opacity=".52"/>
+      <stop offset="1" stop-color="#224B4B" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" stroke="#91B9BF" stroke-opacity=".055"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="400" rx="24" fill="url(#background)"/>
+  <rect width="1280" height="400" rx="24" fill="url(#glow)"/>
+  <rect x="760" width="520" height="400" rx="24" fill="url(#grid)"/>
+  <rect x="1" y="1" width="1278" height="398" rx="23" stroke="#A1D1D4" stroke-opacity=".14"/>
+  <g font-family="'Segoe UI', Helvetica, Arial, sans-serif">
+    <rect x="64" y="57" width="26" height="3" rx="1.5" fill="#91E5CD"/>
+    <text x="104" y="64" fill="#91E5CD" font-size="15" font-weight="600" letter-spacing="3">RESEARCH / BUILD / EXPLORE</text>
+    <text x="60" y="160" fill="#F2F6FA" font-size="66" font-weight="700" letter-spacing="-2">Saleh Ghotbani<tspan fill="#FFB384">.</tspan></text>
+    <text x="64" y="207" fill="#B9CBD7" font-size="25">AI research meets interactive development.</text>
+    <path d="M64 248H696" stroke="#A1D1D4" stroke-opacity=".17"/>
+    <text x="64" y="290" fill="#91E5CD" font-size="16" font-weight="600" letter-spacing="1.3">COMPUTER VISION</text>
+    <circle cx="273" cy="284" r="2" fill="#64818B"/>
+    <text x="293" y="290" fill="#C3D1DC" font-size="16" font-weight="600" letter-spacing="1.3">DEEP LEARNING</text>
+    <circle cx="480" cy="284" r="2" fill="#64818B"/>
+    <text x="500" y="290" fill="#C3D1DC" font-size="16" font-weight="600" letter-spacing="1.3">3D WEB</text>
+    <text x="64" y="351" fill="#8096A7" font-size="16" letter-spacing=".5">github.com/salehghotbani</text>
+  </g>
+  <g stroke="#91E5CD" stroke-opacity=".24" stroke-width="1.5">
+    <path d="M852 110L950 80L1048 130L950 200L852 110L850 240L950 200L1048 270L1144 220L1048 130L1144 98L1144 220L1165 315L1048 270L950 330L850 240L950 80"/>
+    <path d="M950 200L950 330M1048 130V270M950 80L1144 98M852 110L1048 130M850 240L1048 270"/>
+  </g>
+  <g fill="#91E5CD">
+    <circle cx="852" cy="110" r="5"/>
+    <circle cx="950" cy="80" r="4"/>
+    <circle cx="1144" cy="98" r="5"/>
+    <circle cx="850" cy="240" r="4"/>
+    <circle cx="950" cy="330" r="5"/>
+    <circle cx="1144" cy="220" r="4"/>
+    <circle cx="1165" cy="315" r="4"/>
+  </g>
+  <g stroke="#FFB384" stroke-width="2.2" stroke-linejoin="round">
+    <path d="M1002 134L1068 170V246L1002 284L936 246V170L1002 134Z" fill="#10252C"/>
+    <path d="M936 170L1002 208L1068 170M1002 208V284"/>
+    <path d="M1002 134V208M936 246L1002 208L1068 246" stroke-opacity=".28"/>
+  </g>
+  <circle cx="1002" cy="208" r="5" fill="#FFB384"/>
+  <path d="M1202 57H1218M1210 49V65M798 320H810M804 314V326" stroke="#91E5CD" stroke-opacity=".5" stroke-width="1.5"/>
+</svg>
