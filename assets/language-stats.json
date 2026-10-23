@@ -1,0 +1,46 @@
+{
+  "user": "salehghotbani",
+  "retrieved_at": "2026-10-23T20:31:09+00:00",
+  "metric": "GitHub-reported language bytes",
+  "scope": "Public owned repositories; forks and profile repository excluded",
+  "repositories": [
+    {
+      "repository": "Football_AI_YOLO",
+      "languages": {
+        "Jupyter Notebook": 39741
+      }
+    },
+    {
+      "repository": "Game-Quoridor",
+      "languages": {
+        "Java": 999848,
+        "JavaScript": 168286,
+        "PowerShell": 95592,
+        "HTML": 14700,
+        "CSS": 14206,
+        "Dockerfile": 1372
+      }
+    },
+    {
+      "repository": "Game-React-Tutorial",
+      "languages": {
+        "TypeScript": 690999,
+        "CSS": 27349,
+        "JavaScript": 5176,
+        "HTML": 700
+      }
+    },
+    {
+      "repository": "MLP_Mobile_Price",
+      "languages": {
+        "Jupyter Notebook": 547500
+      }
+    },
+    {
+      "repository": "RNN_LSTM_Transformer_HAR_Dataset",
+      "languages": {
+        "Jupyter Notebook": 630954
+      }
+    }
+  ]
+}

@@ -45,6 +45,23 @@ I'm **Saleh Ghotbani**, a researcher and web developer. My public work brings to
 | [**Human activity recognition**](https://github.com/salehghotbani/RNN_LSTM_Transformer_HAR_Dataset) | Comparing RNN, LSTM, and Transformer models on smartphone sensor data. | Python · PyTorch |
 | [**Mobile price classification**](https://github.com/salehghotbani/MLP_Mobile_Price) | Classifying phone price ranges with an MLP and comparing optimizer behavior. | Python · PyTorch |
 
+## Languages in my public code
+
+<p align="center">
+  <img src="assets/language-stats.svg" width="100%" alt="Horizontal bar chart showing language usage across my public, non-fork repositories, measured by GitHub-reported bytes." />
+</p>
+
+The bars show **code volume, not proficiency**. GitHub reports notebook files as **Jupyter Notebook**. Forks and this profile repository are excluded.
+
+<details>
+<summary>Data source and updates</summary>
+
+The chart uses the public GitHub languages API for each included repository. The exact byte counts and retrieval date are saved in [the data snapshot](assets/language-stats.json).
+
+To refresh the chart and snapshot, run `python scripts/update-language-stats.py` with Python 3.10 or newer. No token or external packages are required.
+
+</details>
+
 ## Tools I work with
 
 **AI & data** &nbsp; Python · PyTorch · YOLO · Jupyter
