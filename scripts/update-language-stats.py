@@ -5,6 +5,7 @@ from collections import Counter
 from datetime import datetime, timedelta, timezone
 from html import escape
 import json
+import os
 from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
@@ -27,9 +28,13 @@ COLORS = {
 
 
 def get_json(path):
+    headers = {"Accept": "application/vnd.github+json", "User-Agent": USER + "-profile"}
+    token = os.environ.get("GH_TOKEN")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
     request = Request(
         "https://api.github.com" + path,
-        headers={"Accept": "application/vnd.github+json", "User-Agent": USER + "-profile"},
+        headers=headers,
     )
     with urlopen(request, timeout=30) as response:
         return json.load(response)
@@ -112,20 +117,34 @@ def render_chart(snapshot):
     return "\n".join(parts) + "\n"
 
 
+def write_if_changed(path, content):
+    if path.exists() and path.read_text(encoding="utf-8") == content:
+        return False
+    path.write_text(content, encoding="utf-8")
+    return True
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--from-snapshot", action="store_true", help="Render saved data without network access")
     args = parser.parse_args()
     try:
         snapshot = json.loads(SNAPSHOT.read_text(encoding="utf-8")) if args.from_snapshot else fetch_snapshot()
+        if not args.from_snapshot and SNAPSHOT.exists():
+            previous = json.loads(SNAPSHOT.read_text(encoding="utf-8"))
+            fields = ("user", "metric", "scope", "repositories")
+            if all(previous.get(field) == snapshot.get(field) for field in fields):
+                snapshot["retrieved_at"] = previous["retrieved_at"]
         svg = render_chart(snapshot)
     except (HTTPError, URLError, TimeoutError, ValueError) as error:
         parser.exit(1, f"Language chart update failed: {error}\n")
     SNAPSHOT.parent.mkdir(parents=True, exist_ok=True)
+    changed = False
     if not args.from_snapshot:
-        SNAPSHOT.write_text(json.dumps(snapshot, indent=2) + "\n", encoding="utf-8")
-    CHART.write_text(svg, encoding="utf-8")
-    print(f"Updated {CHART.relative_to(ROOT)} from {len(snapshot['repositories'])} public repositories.")
+        changed = write_if_changed(SNAPSHOT, json.dumps(snapshot, indent=2) + "\n")
+    changed = write_if_changed(CHART, svg) or changed
+    status = "Updated" if changed else "Unchanged"
+    print(f"{status}: {CHART.relative_to(ROOT)} ({len(snapshot['repositories'])} public repositories).")
 
 
 if __name__ == "__main__":

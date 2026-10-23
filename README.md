@@ -58,7 +58,9 @@ The bars show **code volume, not proficiency**. GitHub reports notebook files as
 
 The chart uses the public GitHub languages API for each included repository. The exact byte counts and retrieval date are saved in [the data snapshot](assets/language-stats.json).
 
-To refresh the chart and snapshot, run `python scripts/update-language-stats.py` with Python 3.10 or newer. No token or external packages are required.
+The [refresh workflow](https://github.com/salehghotbani/salehghotbani/actions/workflows/language-stats.yml) checks public repositories every hour and publishes changes automatically. GitHub scheduling and language analysis can introduce a delay after a push. Unchanged data does not create a new commit; the displayed date is the last data update.
+
+You can also run the workflow manually from its Actions page. For a local refresh, use `python scripts/update-language-stats.py` with Python 3.10 or newer. No external packages are required; local use does not require a token.
 
 </details>
 

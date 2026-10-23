@@ -1,0 +1,57 @@
+name: Refresh language stats
+
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/language-stats.yml'
+      - 'scripts/update-language-stats.py'
+      - 'tests/test_language_stats.py'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: language-stats
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out the profile repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.13'
+
+      - name: Check refresh behavior
+        run: python -B -m unittest discover -s tests
+
+      - name: Fetch public language data and regenerate the chart
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/update-language-stats.py
+
+      - name: Publish changed language data
+        shell: bash
+        run: |
+          git add -- assets/language-stats.json assets/language-stats.svg
+          if git diff --cached --quiet; then
+            echo "Language data is unchanged."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m "Refresh public language stats"
+          git pull --rebase origin main
+          git push origin HEAD:main
