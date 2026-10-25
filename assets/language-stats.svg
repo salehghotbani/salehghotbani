@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="708" viewBox="0 0 1100 708" role="img" aria-labelledby="title desc">
-<title id="title">Languages in my public code</title>
+<title id="title">Languages I use</title>
 <desc id="desc">Jupyter Notebook: 37.07%; Java: 32.20%; TypeScript: 21.03%; JavaScript: 5.11%; PowerShell: 2.92%; CSS: 1.30%; HTML: 0.32%; Dockerfile: 0.04%. Share of GitHub-reported bytes; not proficiency. Forks and the profile repository are excluded.</desc>
 <rect x="1" y="1" width="1098" height="706" rx="22" fill="#0D1925" stroke="#263D4B"/>
 <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
-<text x="36" y="57" font-size="27" font-weight="700" fill="#F2F6FA">Languages in my public code</text>
+<text x="36" y="57" font-size="27" font-weight="700" fill="#F2F6FA">Languages I use</text>
 <text x="36" y="91" font-size="18" fill="#A9BFCE">Share of GitHub-reported bytes</text>
 <text x="1060" y="135" text-anchor="end" font-size="15" fill="#A9BFCE">SHARE</text>
 <path d="M300.00 154V581" stroke="#A9BFCE" stroke-opacity=".12"/>
@@ -49,8 +49,8 @@
 <rect x="300" y="547" width="0.658" height="24" rx="0.329" fill="#65D4CE"><title>Dockerfile: 1,372 bytes (0.04%)</title></rect>
 <text x="1060" y="568" text-anchor="end" font-size="22" font-weight="600" fill="#65D4CE">0.04%</text>
 <path d="M36 605H1064" stroke="#263D4B"/>
-<text x="36" y="633" font-size="16" fill="#A9BFCE">5 public repositories · forks and profile repository excluded</text>
+<text x="36" y="633" font-size="16" fill="#A9BFCE">Public repositories · forks and profile repository excluded</text>
 <text x="36" y="660" font-size="16" fill="#A9BFCE">Notebook files are reported as Jupyter Notebook. These percentages do not measure proficiency.</text>
-<text x="36" y="687" font-size="15" fill="#8096A7">Updated 2026-10-25 (Tehran) · Source: public GitHub languages API</text>
+<text x="36" y="687" font-size="15" fill="#8096A7">Updated 2026-10-25 (Tehran) · Source: GitHub languages API</text>
 </g>
 </svg>

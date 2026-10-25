@@ -45,10 +45,10 @@ I'm **Saleh Ghotbani**, a researcher and web developer. My public work brings to
 | [**Human activity recognition**](https://github.com/salehghotbani/RNN_LSTM_Transformer_HAR_Dataset) | Comparing RNN, LSTM, and Transformer models on smartphone sensor data. | Python · PyTorch |
 | [**Mobile price classification**](https://github.com/salehghotbani/MLP_Mobile_Price) | Classifying phone price ranges with an MLP and comparing optimizer behavior. | Python · PyTorch |
 
-## Languages in my public code
+## Languages I use
 
 <p align="center">
-  <img src="assets/language-stats.svg" width="100%" alt="Horizontal bar chart showing language usage across my public, non-fork repositories, measured by GitHub-reported bytes." />
+  <img src="assets/language-stats.svg" width="100%" alt="Horizontal bar chart showing aggregate language usage, measured by GitHub-reported bytes. Repository coverage is indicated in the chart." />
 </p>
 
 The bars show **code volume, not proficiency**. GitHub reports notebook files as **Jupyter Notebook**. Forks and this profile repository are excluded.

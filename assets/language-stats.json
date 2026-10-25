@@ -1,46 +1,19 @@
 {
+  "schema_version": 2,
   "user": "salehghotbani",
   "retrieved_at": "2026-10-25T04:47:18+00:00",
   "metric": "GitHub-reported language bytes",
-  "scope": "Public owned repositories; forks and profile repository excluded",
-  "repositories": [
-    {
-      "repository": "Football_AI_YOLO",
-      "languages": {
-        "Jupyter Notebook": 39741
-      }
-    },
-    {
-      "repository": "Game-Quoridor",
-      "languages": {
-        "Java": 1058091,
-        "JavaScript": 162694,
-        "PowerShell": 96082,
-        "CSS": 15487,
-        "HTML": 9747,
-        "Dockerfile": 1372
-      }
-    },
-    {
-      "repository": "Game-React-Tutorial",
-      "languages": {
-        "TypeScript": 690999,
-        "CSS": 27349,
-        "JavaScript": 5176,
-        "HTML": 700
-      }
-    },
-    {
-      "repository": "MLP_Mobile_Price",
-      "languages": {
-        "Jupyter Notebook": 547500
-      }
-    },
-    {
-      "repository": "RNN_LSTM_Transformer_HAR_Dataset",
-      "languages": {
-        "Jupyter Notebook": 630954
-      }
-    }
-  ]
+  "scope": "Owned repositories; forks and profile repository excluded",
+  "visibility": "public",
+  "repository_count": 5,
+  "languages": {
+    "CSS": 42836,
+    "Dockerfile": 1372,
+    "HTML": 10447,
+    "Java": 1058091,
+    "JavaScript": 167870,
+    "Jupyter Notebook": 1218195,
+    "PowerShell": 96082,
+    "TypeScript": 690999
+  }
 }

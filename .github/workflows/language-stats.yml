@@ -37,9 +37,10 @@ jobs:
       - name: Check refresh behavior
         run: python -B -m unittest discover -s tests
 
-      - name: Fetch public language data and regenerate the chart
+      - name: Fetch aggregate language data and regenerate the chart
         env:
           GH_TOKEN: ${{ github.token }}
+          LANGUAGE_STATS_TOKEN: ${{ secrets.LANGUAGE_STATS_TOKEN }}
         run: python scripts/update-language-stats.py
 
       - name: Publish changed language data
@@ -52,6 +53,6 @@ jobs:
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m "Refresh public language stats"
+          git commit -m "Refresh aggregate language stats"
           git pull --rebase origin main
           git push origin HEAD:main

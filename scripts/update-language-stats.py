@@ -1,4 +1,4 @@
-"""Refresh the profile's public-repository language chart using GitHub's REST API."""
+"""Refresh aggregate language statistics without publishing repository identities."""
 
 import argparse
 from collections import Counter
@@ -27,9 +27,11 @@ COLORS = {
 }
 
 
-def get_json(path):
+def get_json(path, *, token=None):
     headers = {"Accept": "application/vnd.github+json", "User-Agent": USER + "-profile"}
-    token = os.environ.get("GH_TOKEN")
+    token = (token or os.environ.get("GH_TOKEN") or "").strip()
+    if "\r" in token or "\n" in token:
+        raise ValueError("GitHub API credential has an invalid format.")
     if token:
         headers["Authorization"] = f"Bearer {token}"
     request = Request(
@@ -41,31 +43,63 @@ def get_json(path):
 
 
 def fetch_snapshot():
-    repositories = []
-    page = 1
-    while True:
-        batch = get_json(f"/users/{USER}/repos?type=owner&per_page=100&page={page}")
-        for repo in batch:
-            if repo["private"] or repo["fork"] or repo["name"].lower() == USER.lower():
-                continue
-            languages = get_json(f"/repos/{USER}/{repo['name']}/languages")
-            repositories.append({"repository": repo["name"], "languages": languages})
-        if len(batch) < 100:
-            break
-        page += 1
+    totals = Counter()
+    repository_count = 0
+    private_token = os.environ.get("LANGUAGE_STATS_TOKEN", "").strip()
+    sources = [(f"/users/{USER}/repos?type=owner", None, False)]
+    if private_token:
+        sources.append(("/user/repos?visibility=private&affiliation=owner", private_token, True))
+    for path, token, private in sources:
+        page = 1
+        while True:
+            batch = get_json(f"{path}&per_page=100&page={page}", token=token)
+            for repo in batch:
+                if (
+                    repo["private"] != private
+                    or repo["fork"]
+                    or repo["name"].lower() == USER.lower()
+                    or repo["owner"]["login"].lower() != USER.lower()
+                ):
+                    continue
+                # Repository identifiers stay in memory; only combined counts are saved.
+                totals.update(get_json(f"/repos/{USER}/{repo['name']}/languages", token=token))
+                repository_count += 1
+            if len(batch) < 100:
+                break
+            page += 1
     return {
+        "schema_version": 2,
         "user": USER,
         "retrieved_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "metric": "GitHub-reported language bytes",
-        "scope": "Public owned repositories; forks and profile repository excluded",
-        "repositories": sorted(repositories, key=lambda item: item["repository"].lower()),
+        "scope": "Owned repositories; forks and profile repository excluded",
+        "visibility": "public_and_authorized_private" if private_token else "public",
+        "repository_count": repository_count,
+        "languages": dict(sorted(totals.items())),
+    }
+
+
+def normalize_snapshot(snapshot):
+    """Migrate the previous public-only snapshot to the anonymous aggregate format."""
+    if "repositories" not in snapshot:
+        return snapshot
+    totals = Counter()
+    for repo in snapshot["repositories"]:
+        totals.update(repo["languages"])
+    return {
+        "schema_version": 2,
+        "user": snapshot["user"],
+        "retrieved_at": snapshot["retrieved_at"],
+        "metric": snapshot["metric"],
+        "scope": "Owned repositories; forks and profile repository excluded",
+        "visibility": "public",
+        "repository_count": len(snapshot["repositories"]),
+        "languages": dict(sorted(totals.items())),
     }
 
 
 def render_chart(snapshot):
-    totals = Counter()
-    for repo in snapshot["repositories"]:
-        totals.update(repo["languages"])
+    totals = Counter(snapshot["languages"])
     totals = Counter({name: size for name, size in totals.items() if size > 0})
     total = sum(totals.values())
     if not total:
@@ -79,13 +113,14 @@ def render_chart(snapshot):
     tehran = timezone(timedelta(hours=3, minutes=30), "Asia/Tehran")
     date = datetime.fromisoformat(snapshot["retrieved_at"]).astimezone(tehran).date().isoformat()
     description = "; ".join(f"{name}: {share:.2f}%" for name, share in shares)
+    coverage = "Public + authorized private repositories" if snapshot["visibility"] == "public_and_authorized_private" else "Public repositories"
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="{height}" viewBox="0 0 1100 {height}" role="img" aria-labelledby="title desc">',
-        '<title id="title">Languages in my public code</title>',
+        '<title id="title">Languages I use</title>',
         f'<desc id="desc">{escape(description)}. Share of GitHub-reported bytes; not proficiency. Forks and the profile repository are excluded.</desc>',
         f'<rect x="1" y="1" width="1098" height="{height - 2}" rx="22" fill="#0D1925" stroke="#263D4B"/>',
         '<g font-family="Segoe UI, Helvetica, Arial, sans-serif">',
-        '<text x="36" y="57" font-size="27" font-weight="700" fill="#F2F6FA">Languages in my public code</text>',
+        '<text x="36" y="57" font-size="27" font-weight="700" fill="#F2F6FA">Languages I use</text>',
         '<text x="36" y="91" font-size="18" fill="#A9BFCE">Share of GitHub-reported bytes</text>',
         '<text x="1060" y="135" text-anchor="end" font-size="15" fill="#A9BFCE">SHARE</text>',
     ]
@@ -108,9 +143,9 @@ def render_chart(snapshot):
         ]
     parts += [
         f'<path d="M36 {footer - 24}H1064" stroke="#263D4B"/>',
-        f'<text x="36" y="{footer + 4}" font-size="16" fill="#A9BFCE">{len(snapshot["repositories"])} public repositories · forks and profile repository excluded</text>',
+        f'<text x="36" y="{footer + 4}" font-size="16" fill="#A9BFCE">{coverage} · forks and profile repository excluded</text>',
         f'<text x="36" y="{footer + 31}" font-size="16" fill="#A9BFCE">Notebook files are reported as Jupyter Notebook. These percentages do not measure proficiency.</text>',
-        f'<text x="36" y="{footer + 58}" font-size="15" fill="#8096A7">Updated {date} (Tehran) · Source: public GitHub languages API</text>',
+        f'<text x="36" y="{footer + 58}" font-size="15" fill="#8096A7">Updated {date} (Tehran) · Source: GitHub languages API</text>',
         '</g>',
         '</svg>',
     ]
@@ -129,22 +164,25 @@ def main():
     parser.add_argument("--from-snapshot", action="store_true", help="Render saved data without network access")
     args = parser.parse_args()
     try:
-        snapshot = json.loads(SNAPSHOT.read_text(encoding="utf-8")) if args.from_snapshot else fetch_snapshot()
+        snapshot = normalize_snapshot(json.loads(SNAPSHOT.read_text(encoding="utf-8"))) if args.from_snapshot else fetch_snapshot()
         if not args.from_snapshot and SNAPSHOT.exists():
-            previous = json.loads(SNAPSHOT.read_text(encoding="utf-8"))
-            fields = ("user", "metric", "scope", "repositories")
+            previous = normalize_snapshot(json.loads(SNAPSHOT.read_text(encoding="utf-8")))
+            if previous["visibility"] == "public_and_authorized_private" and snapshot["visibility"] == "public":
+                raise ValueError("Private statistics credential is missing; keeping the previous chart.")
+            fields = ("user", "metric", "scope", "visibility", "repository_count", "languages")
             if all(previous.get(field) == snapshot.get(field) for field in fields):
                 snapshot["retrieved_at"] = previous["retrieved_at"]
         svg = render_chart(snapshot)
-    except (HTTPError, URLError, TimeoutError, ValueError) as error:
+    except (HTTPError, URLError, TimeoutError):
+        # API exceptions can contain private URLs. Keep workflow logs anonymous.
+        parser.exit(1, "Language chart update failed: GitHub API unavailable. Check credentials, permissions, and network. Previous chart preserved.\n")
+    except ValueError as error:
         parser.exit(1, f"Language chart update failed: {error}\n")
     SNAPSHOT.parent.mkdir(parents=True, exist_ok=True)
-    changed = False
-    if not args.from_snapshot:
-        changed = write_if_changed(SNAPSHOT, json.dumps(snapshot, indent=2) + "\n")
+    changed = write_if_changed(SNAPSHOT, json.dumps(snapshot, indent=2) + "\n")
     changed = write_if_changed(CHART, svg) or changed
     status = "Updated" if changed else "Unchanged"
-    print(f"{status}: {CHART.relative_to(ROOT)} ({len(snapshot['repositories'])} public repositories).")
+    print(f"{status}: {CHART.relative_to(ROOT)} (aggregate language statistics).")
 
 
 if __name__ == "__main__":
