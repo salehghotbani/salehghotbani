@@ -1,6 +1,6 @@
 {
   "user": "salehghotbani",
-  "retrieved_at": "2026-10-23T20:31:09+00:00",
+  "retrieved_at": "2026-10-25T04:47:18+00:00",
   "metric": "GitHub-reported language bytes",
   "scope": "Public owned repositories; forks and profile repository excluded",
   "repositories": [
@@ -13,11 +13,11 @@
     {
       "repository": "Game-Quoridor",
       "languages": {
-        "Java": 999848,
-        "JavaScript": 168286,
-        "PowerShell": 95592,
-        "HTML": 14700,
-        "CSS": 14206,
+        "Java": 1058091,
+        "JavaScript": 162694,
+        "PowerShell": 96082,
+        "CSS": 15487,
+        "HTML": 9747,
         "Dockerfile": 1372
       }
     },

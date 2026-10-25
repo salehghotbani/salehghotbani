@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="708" viewBox="0 0 1100 708" role="img" aria-labelledby="title desc">
 <title id="title">Languages in my public code</title>
-<desc id="desc">Jupyter Notebook: 37.64%; Java: 30.89%; TypeScript: 21.35%; JavaScript: 5.36%; PowerShell: 2.95%; CSS: 1.28%; HTML: 0.48%; Dockerfile: 0.04%. Share of GitHub-reported bytes; not proficiency. Forks and the profile repository are excluded.</desc>
+<desc id="desc">Jupyter Notebook: 37.07%; Java: 32.20%; TypeScript: 21.03%; JavaScript: 5.11%; PowerShell: 2.92%; CSS: 1.30%; HTML: 0.32%; Dockerfile: 0.04%. Share of GitHub-reported bytes; not proficiency. Forks and the profile repository are excluded.</desc>
 <rect x="1" y="1" width="1098" height="706" rx="22" fill="#0D1925" stroke="#263D4B"/>
 <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
 <text x="36" y="57" font-size="27" font-weight="700" fill="#F2F6FA">Languages in my public code</text>
@@ -18,39 +18,39 @@
 <text x="930.00" y="135" text-anchor="middle" font-size="15" fill="#A9BFCE">40%</text>
 <text x="36" y="183" font-size="21" fill="#E4EDF3">Jupyter Notebook</text>
 <rect x="300" y="162" width="630" height="24" rx="5" fill="#1A2B38"/>
-<rect x="300" y="162" width="592.833" height="24" rx="5.000" fill="#F08B52"><title>Jupyter Notebook: 1,218,195 bytes (37.64%)</title></rect>
-<text x="1060" y="183" text-anchor="end" font-size="22" font-weight="600" fill="#F08B52">37.64%</text>
+<rect x="300" y="162" width="583.908" height="24" rx="5.000" fill="#F08B52"><title>Jupyter Notebook: 1,218,195 bytes (37.07%)</title></rect>
+<text x="1060" y="183" text-anchor="end" font-size="22" font-weight="600" fill="#F08B52">37.07%</text>
 <text x="36" y="238" font-size="21" fill="#E4EDF3">Java</text>
 <rect x="300" y="217" width="630" height="24" rx="5" fill="#1A2B38"/>
-<rect x="300" y="217" width="486.574" height="24" rx="5.000" fill="#C69B60"><title>Java: 999,848 bytes (30.89%)</title></rect>
-<text x="1060" y="238" text-anchor="end" font-size="22" font-weight="600" fill="#C69B60">30.89%</text>
+<rect x="300" y="217" width="507.166" height="24" rx="5.000" fill="#C69B60"><title>Java: 1,058,091 bytes (32.20%)</title></rect>
+<text x="1060" y="238" text-anchor="end" font-size="22" font-weight="600" fill="#C69B60">32.20%</text>
 <text x="36" y="293" font-size="21" fill="#E4EDF3">TypeScript</text>
 <rect x="300" y="272" width="630" height="24" rx="5" fill="#1A2B38"/>
-<rect x="300" y="272" width="336.274" height="24" rx="5.000" fill="#65A9FF"><title>TypeScript: 690,999 bytes (21.35%)</title></rect>
-<text x="1060" y="293" text-anchor="end" font-size="22" font-weight="600" fill="#65A9FF">21.35%</text>
+<rect x="300" y="272" width="331.211" height="24" rx="5.000" fill="#65A9FF"><title>TypeScript: 690,999 bytes (21.03%)</title></rect>
+<text x="1060" y="293" text-anchor="end" font-size="22" font-weight="600" fill="#65A9FF">21.03%</text>
 <text x="36" y="348" font-size="21" fill="#E4EDF3">JavaScript</text>
 <rect x="300" y="327" width="630" height="24" rx="5" fill="#1A2B38"/>
-<rect x="300" y="327" width="84.415" height="24" rx="5.000" fill="#F4D75E"><title>JavaScript: 173,462 bytes (5.36%)</title></rect>
-<text x="1060" y="348" text-anchor="end" font-size="22" font-weight="600" fill="#F4D75E">5.36%</text>
+<rect x="300" y="327" width="80.464" height="24" rx="5.000" fill="#F4D75E"><title>JavaScript: 167,870 bytes (5.11%)</title></rect>
+<text x="1060" y="348" text-anchor="end" font-size="22" font-weight="600" fill="#F4D75E">5.11%</text>
 <text x="36" y="403" font-size="21" fill="#E4EDF3">PowerShell</text>
 <rect x="300" y="382" width="630" height="24" rx="5" fill="#1A2B38"/>
-<rect x="300" y="382" width="46.520" height="24" rx="5.000" fill="#B49CFF"><title>PowerShell: 95,592 bytes (2.95%)</title></rect>
-<text x="1060" y="403" text-anchor="end" font-size="22" font-weight="600" fill="#B49CFF">2.95%</text>
+<rect x="300" y="382" width="46.054" height="24" rx="5.000" fill="#B49CFF"><title>PowerShell: 96,082 bytes (2.92%)</title></rect>
+<text x="1060" y="403" text-anchor="end" font-size="22" font-weight="600" fill="#B49CFF">2.92%</text>
 <text x="36" y="458" font-size="21" fill="#E4EDF3">CSS</text>
 <rect x="300" y="437" width="630" height="24" rx="5" fill="#1A2B38"/>
-<rect x="300" y="437" width="20.223" height="24" rx="5.000" fill="#DE8CDA"><title>CSS: 41,555 bytes (1.28%)</title></rect>
-<text x="1060" y="458" text-anchor="end" font-size="22" font-weight="600" fill="#DE8CDA">1.28%</text>
+<rect x="300" y="437" width="20.532" height="24" rx="5.000" fill="#DE8CDA"><title>CSS: 42,836 bytes (1.30%)</title></rect>
+<text x="1060" y="458" text-anchor="end" font-size="22" font-weight="600" fill="#DE8CDA">1.30%</text>
 <text x="36" y="513" font-size="21" fill="#E4EDF3">HTML</text>
 <rect x="300" y="492" width="630" height="24" rx="5" fill="#1A2B38"/>
-<rect x="300" y="492" width="7.494" height="24" rx="3.747" fill="#FF786A"><title>HTML: 15,400 bytes (0.48%)</title></rect>
-<text x="1060" y="513" text-anchor="end" font-size="22" font-weight="600" fill="#FF786A">0.48%</text>
+<rect x="300" y="492" width="5.007" height="24" rx="2.504" fill="#FF786A"><title>HTML: 10,447 bytes (0.32%)</title></rect>
+<text x="1060" y="513" text-anchor="end" font-size="22" font-weight="600" fill="#FF786A">0.32%</text>
 <text x="36" y="568" font-size="21" fill="#E4EDF3">Dockerfile</text>
 <rect x="300" y="547" width="630" height="24" rx="5" fill="#1A2B38"/>
-<rect x="300" y="547" width="0.668" height="24" rx="0.334" fill="#65D4CE"><title>Dockerfile: 1,372 bytes (0.04%)</title></rect>
+<rect x="300" y="547" width="0.658" height="24" rx="0.329" fill="#65D4CE"><title>Dockerfile: 1,372 bytes (0.04%)</title></rect>
 <text x="1060" y="568" text-anchor="end" font-size="22" font-weight="600" fill="#65D4CE">0.04%</text>
 <path d="M36 605H1064" stroke="#263D4B"/>
 <text x="36" y="633" font-size="16" fill="#A9BFCE">5 public repositories · forks and profile repository excluded</text>
 <text x="36" y="660" font-size="16" fill="#A9BFCE">Notebook files are reported as Jupyter Notebook. These percentages do not measure proficiency.</text>
-<text x="36" y="687" font-size="15" fill="#8096A7">Updated 2026-10-24 (Tehran) · Source: public GitHub languages API</text>
+<text x="36" y="687" font-size="15" fill="#8096A7">Updated 2026-10-25 (Tehran) · Source: public GitHub languages API</text>
 </g>
 </svg>
