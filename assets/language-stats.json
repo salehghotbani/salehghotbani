@@ -1,19 +1,20 @@
 {
   "schema_version": 2,
   "user": "salehghotbani",
-  "retrieved_at": "2026-10-25T04:47:18+00:00",
+  "retrieved_at": "2026-10-28T05:46:51+00:00",
   "metric": "GitHub-reported language bytes",
   "scope": "Owned repositories; forks and profile repository excluded",
   "visibility": "public",
-  "repository_count": 5,
+  "repository_count": 6,
   "languages": {
-    "CSS": 42836,
+    "CSS": 51849,
     "Dockerfile": 1372,
-    "HTML": 10447,
+    "HTML": 16484,
     "Java": 1058091,
-    "JavaScript": 167870,
+    "JavaScript": 283158,
     "Jupyter Notebook": 1218195,
     "PowerShell": 96082,
+    "Python": 884,
     "TypeScript": 690999
   }
 }

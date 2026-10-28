@@ -1,56 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="708" viewBox="0 0 1100 708" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="763" viewBox="0 0 1100 763" role="img" aria-labelledby="title desc">
 <title id="title">Languages I use</title>
-<desc id="desc">Jupyter Notebook: 37.07%; Java: 32.20%; TypeScript: 21.03%; JavaScript: 5.11%; PowerShell: 2.92%; CSS: 1.30%; HTML: 0.32%; Dockerfile: 0.04%. Share of GitHub-reported bytes; not proficiency. Forks and the profile repository are excluded.</desc>
-<rect x="1" y="1" width="1098" height="706" rx="22" fill="#0D1925" stroke="#263D4B"/>
+<desc id="desc">Jupyter Notebook: 35.65%; Java: 30.96%; TypeScript: 20.22%; JavaScript: 8.29%; PowerShell: 2.81%; CSS: 1.52%; HTML: 0.48%; Dockerfile: 0.04%; Python: 0.03%. Share of GitHub-reported bytes; not proficiency. Forks and the profile repository are excluded.</desc>
+<rect x="1" y="1" width="1098" height="761" rx="22" fill="#0D1925" stroke="#263D4B"/>
 <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
 <text x="36" y="57" font-size="27" font-weight="700" fill="#F2F6FA">Languages I use</text>
 <text x="36" y="91" font-size="18" fill="#A9BFCE">Share of GitHub-reported bytes</text>
 <text x="1060" y="135" text-anchor="end" font-size="15" fill="#A9BFCE">SHARE</text>
-<path d="M300.00 154V581" stroke="#A9BFCE" stroke-opacity=".12"/>
+<path d="M300.00 154V636" stroke="#A9BFCE" stroke-opacity=".12"/>
 <text x="300.00" y="135" text-anchor="middle" font-size="15" fill="#A9BFCE">0%</text>
-<path d="M457.50 154V581" stroke="#A9BFCE" stroke-opacity=".12"/>
+<path d="M457.50 154V636" stroke="#A9BFCE" stroke-opacity=".12"/>
 <text x="457.50" y="135" text-anchor="middle" font-size="15" fill="#A9BFCE">10%</text>
-<path d="M615.00 154V581" stroke="#A9BFCE" stroke-opacity=".12"/>
+<path d="M615.00 154V636" stroke="#A9BFCE" stroke-opacity=".12"/>
 <text x="615.00" y="135" text-anchor="middle" font-size="15" fill="#A9BFCE">20%</text>
-<path d="M772.50 154V581" stroke="#A9BFCE" stroke-opacity=".12"/>
+<path d="M772.50 154V636" stroke="#A9BFCE" stroke-opacity=".12"/>
 <text x="772.50" y="135" text-anchor="middle" font-size="15" fill="#A9BFCE">30%</text>
-<path d="M930.00 154V581" stroke="#A9BFCE" stroke-opacity=".12"/>
+<path d="M930.00 154V636" stroke="#A9BFCE" stroke-opacity=".12"/>
 <text x="930.00" y="135" text-anchor="middle" font-size="15" fill="#A9BFCE">40%</text>
 <text x="36" y="183" font-size="21" fill="#E4EDF3">Jupyter Notebook</text>
 <rect x="300" y="162" width="630" height="24" rx="5" fill="#1A2B38"/>
-<rect x="300" y="162" width="583.908" height="24" rx="5.000" fill="#F08B52"><title>Jupyter Notebook: 1,218,195 bytes (37.07%)</title></rect>
-<text x="1060" y="183" text-anchor="end" font-size="22" font-weight="600" fill="#F08B52">37.07%</text>
+<rect x="300" y="162" width="561.485" height="24" rx="5.000" fill="#F08B52"><title>Jupyter Notebook: 1,218,195 bytes (35.65%)</title></rect>
+<text x="1060" y="183" text-anchor="end" font-size="22" font-weight="600" fill="#F08B52">35.65%</text>
 <text x="36" y="238" font-size="21" fill="#E4EDF3">Java</text>
 <rect x="300" y="217" width="630" height="24" rx="5" fill="#1A2B38"/>
-<rect x="300" y="217" width="507.166" height="24" rx="5.000" fill="#C69B60"><title>Java: 1,058,091 bytes (32.20%)</title></rect>
-<text x="1060" y="238" text-anchor="end" font-size="22" font-weight="600" fill="#C69B60">32.20%</text>
+<rect x="300" y="217" width="487.690" height="24" rx="5.000" fill="#C69B60"><title>Java: 1,058,091 bytes (30.96%)</title></rect>
+<text x="1060" y="238" text-anchor="end" font-size="22" font-weight="600" fill="#C69B60">30.96%</text>
 <text x="36" y="293" font-size="21" fill="#E4EDF3">TypeScript</text>
 <rect x="300" y="272" width="630" height="24" rx="5" fill="#1A2B38"/>
-<rect x="300" y="272" width="331.211" height="24" rx="5.000" fill="#65A9FF"><title>TypeScript: 690,999 bytes (21.03%)</title></rect>
-<text x="1060" y="293" text-anchor="end" font-size="22" font-weight="600" fill="#65A9FF">21.03%</text>
+<rect x="300" y="272" width="318.492" height="24" rx="5.000" fill="#65A9FF"><title>TypeScript: 690,999 bytes (20.22%)</title></rect>
+<text x="1060" y="293" text-anchor="end" font-size="22" font-weight="600" fill="#65A9FF">20.22%</text>
 <text x="36" y="348" font-size="21" fill="#E4EDF3">JavaScript</text>
 <rect x="300" y="327" width="630" height="24" rx="5" fill="#1A2B38"/>
-<rect x="300" y="327" width="80.464" height="24" rx="5.000" fill="#F4D75E"><title>JavaScript: 167,870 bytes (5.11%)</title></rect>
-<text x="1060" y="348" text-anchor="end" font-size="22" font-weight="600" fill="#F4D75E">5.11%</text>
+<rect x="300" y="327" width="130.512" height="24" rx="5.000" fill="#F4D75E"><title>JavaScript: 283,158 bytes (8.29%)</title></rect>
+<text x="1060" y="348" text-anchor="end" font-size="22" font-weight="600" fill="#F4D75E">8.29%</text>
 <text x="36" y="403" font-size="21" fill="#E4EDF3">PowerShell</text>
 <rect x="300" y="382" width="630" height="24" rx="5" fill="#1A2B38"/>
-<rect x="300" y="382" width="46.054" height="24" rx="5.000" fill="#B49CFF"><title>PowerShell: 96,082 bytes (2.92%)</title></rect>
-<text x="1060" y="403" text-anchor="end" font-size="22" font-weight="600" fill="#B49CFF">2.92%</text>
+<rect x="300" y="382" width="44.286" height="24" rx="5.000" fill="#B49CFF"><title>PowerShell: 96,082 bytes (2.81%)</title></rect>
+<text x="1060" y="403" text-anchor="end" font-size="22" font-weight="600" fill="#B49CFF">2.81%</text>
 <text x="36" y="458" font-size="21" fill="#E4EDF3">CSS</text>
 <rect x="300" y="437" width="630" height="24" rx="5" fill="#1A2B38"/>
-<rect x="300" y="437" width="20.532" height="24" rx="5.000" fill="#DE8CDA"><title>CSS: 42,836 bytes (1.30%)</title></rect>
-<text x="1060" y="458" text-anchor="end" font-size="22" font-weight="600" fill="#DE8CDA">1.30%</text>
+<rect x="300" y="437" width="23.898" height="24" rx="5.000" fill="#DE8CDA"><title>CSS: 51,849 bytes (1.52%)</title></rect>
+<text x="1060" y="458" text-anchor="end" font-size="22" font-weight="600" fill="#DE8CDA">1.52%</text>
 <text x="36" y="513" font-size="21" fill="#E4EDF3">HTML</text>
 <rect x="300" y="492" width="630" height="24" rx="5" fill="#1A2B38"/>
-<rect x="300" y="492" width="5.007" height="24" rx="2.504" fill="#FF786A"><title>HTML: 10,447 bytes (0.32%)</title></rect>
-<text x="1060" y="513" text-anchor="end" font-size="22" font-weight="600" fill="#FF786A">0.32%</text>
+<rect x="300" y="492" width="7.598" height="24" rx="3.799" fill="#FF786A"><title>HTML: 16,484 bytes (0.48%)</title></rect>
+<text x="1060" y="513" text-anchor="end" font-size="22" font-weight="600" fill="#FF786A">0.48%</text>
 <text x="36" y="568" font-size="21" fill="#E4EDF3">Dockerfile</text>
 <rect x="300" y="547" width="630" height="24" rx="5" fill="#1A2B38"/>
-<rect x="300" y="547" width="0.658" height="24" rx="0.329" fill="#65D4CE"><title>Dockerfile: 1,372 bytes (0.04%)</title></rect>
+<rect x="300" y="547" width="0.632" height="24" rx="0.316" fill="#65D4CE"><title>Dockerfile: 1,372 bytes (0.04%)</title></rect>
 <text x="1060" y="568" text-anchor="end" font-size="22" font-weight="600" fill="#65D4CE">0.04%</text>
-<path d="M36 605H1064" stroke="#263D4B"/>
-<text x="36" y="633" font-size="16" fill="#A9BFCE">Public repositories · forks and profile repository excluded</text>
-<text x="36" y="660" font-size="16" fill="#A9BFCE">Notebook files are reported as Jupyter Notebook. These percentages do not measure proficiency.</text>
-<text x="36" y="687" font-size="15" fill="#8096A7">Updated 2026-10-25 (Tehran) · Source: GitHub languages API</text>
+<text x="36" y="623" font-size="21" fill="#E4EDF3">Python</text>
+<rect x="300" y="602" width="630" height="24" rx="5" fill="#1A2B38"/>
+<rect x="300" y="602" width="0.407" height="24" rx="0.204" fill="#91E5CD"><title>Python: 884 bytes (0.03%)</title></rect>
+<text x="1060" y="623" text-anchor="end" font-size="22" font-weight="600" fill="#91E5CD">0.03%</text>
+<path d="M36 660H1064" stroke="#263D4B"/>
+<text x="36" y="688" font-size="16" fill="#A9BFCE">Public repositories · forks and profile repository excluded</text>
+<text x="36" y="715" font-size="16" fill="#A9BFCE">Notebook files are reported as Jupyter Notebook. These percentages do not measure proficiency.</text>
+<text x="36" y="742" font-size="15" fill="#8096A7">Updated 2026-10-28 (Tehran) · Source: GitHub languages API</text>
 </g>
 </svg>
