@@ -2,13 +2,14 @@
 
 import argparse
 from collections import Counter
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 from html import escape
 import json
 import os
 from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
+from source_lines import repository_lines
 
 
 USER = "salehghotbani"
@@ -24,6 +25,10 @@ COLORS = {
     "CSS": "#DE8CDA",
     "HTML": "#FF786A",
     "Dockerfile": "#65D4CE",
+    "Python": "#69C99D", "C": "#CBD5E1", "C#": "#C8A2F2",
+    "C++": "#F19BC1", "GDScript": "#79B8DB", "TeX": "#92BD7E",
+    "Shell": "#B5CD78", "SCSS": "#CF8EC4", "Swift": "#F5A374",
+    "CMake": "#8AB0FF", "Rust": "#DBAB8C", "Mako": "#BC9F84",
 }
 
 
@@ -46,6 +51,15 @@ def fetch_snapshot():
     totals = Counter()
     repository_count = 0
     private_token = os.environ.get("LANGUAGE_STATS_TOKEN", "").strip()
+    mode = os.environ.get('LANGUAGE_STATS_METRIC', 'bytes')
+    if mode not in ('bytes', 'lines'):
+        raise ValueError('Unknown language statistics metric.')
+    if mode == 'lines' and private_token:
+        # Check source access before downloading any archives. Metadata alone is insufficient.
+        sample = get_json('/user/repos?visibility=private&affiliation=owner&per_page=1&page=1', token=private_token)
+        if sample:
+            from urllib.parse import quote
+            get_json(f"/repos/{USER}/{quote(sample[0]['name'], safe='')}/contents", token=private_token)
     sources = [(f"/users/{USER}/repos?type=owner", None, False)]
     if private_token:
         sources.append(("/user/repos?visibility=private&affiliation=owner", private_token, True))
@@ -62,7 +76,10 @@ def fetch_snapshot():
                 ):
                     continue
                 # Repository identifiers stay in memory; only combined counts are saved.
-                totals.update(get_json(f"/repos/{USER}/{repo['name']}/languages", token=token))
+                if mode == 'lines':
+                    totals.update(repository_lines(USER, repo, token or os.environ.get('GH_TOKEN', '').strip()))
+                else:
+                    totals.update(get_json(f"/repos/{USER}/{repo['name']}/languages", token=token))
                 repository_count += 1
             if len(batch) < 100:
                 break
@@ -71,7 +88,7 @@ def fetch_snapshot():
         "schema_version": 2,
         "user": USER,
         "retrieved_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "metric": "GitHub-reported language bytes",
+        "metric": "Non-empty source lines (comments included)" if mode == 'lines' else "GitHub-reported language bytes",
         "scope": "Owned repositories; public forks and profile repository excluded",
         "visibility": "public_and_authorized_private" if private_token else "public",
         "repository_count": repository_count,
@@ -98,54 +115,46 @@ def normalize_snapshot(snapshot):
     }
 
 
-def render_chart(snapshot):
+def render_chart(snapshot, *, all_languages=False):
     totals = Counter(snapshot["languages"])
     totals = Counter({name: size for name, size in totals.items() if size > 0})
-    total = sum(totals.values())
-    if not total:
+    if not sum(totals.values()):
         raise ValueError("No language bytes found; the existing chart was not replaced.")
     languages = sorted(totals.items(), key=lambda item: (-item[1], item[0]))
-    shares = [(name, size / total * 100) for name, size in languages]
-    axis_max = min(100, (int(shares[0][1] / 10) + 1) * 10)
-    height = 268 + 55 * len(languages)
-    plot_bottom = 176 + 55 * (len(languages) - 1) + 20
-    footer = plot_bottom + 48
-    tehran = timezone(timedelta(hours=3, minutes=30), "Asia/Tehran")
-    date = datetime.fromisoformat(snapshot["retrieved_at"]).astimezone(tehran).date().isoformat()
-    description = "; ".join(f"{name}: {share:.2f}%" for name, share in shares)
-    coverage = "Public + authorized private repositories" if snapshot["visibility"] == "public_and_authorized_private" else "Public repositories"
+    languages = languages if all_languages else languages[:8]
+    lines = snapshot['metric'].startswith('Non-empty source lines')
+    unit = 'lines' if lines else 'bytes'
+    heading = 'Source lines' if lines else 'Source size (bytes)'
+    height = 116 + 57 * len(languages)
+    description = '; '.join(f'{name}: {size:,} {unit}' for name, size in languages)
+    maximum = max(totals.values())
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="{height}" viewBox="0 0 1100 {height}" role="img" aria-labelledby="title desc">',
         '<title id="title">Languages I use</title>',
-        f'<desc id="desc">{escape(description)}. Share of GitHub-reported bytes; not proficiency. Public forks and the profile repository are excluded.</desc>',
+        f'<desc id="desc">{escape(description)}. {escape(snapshot["metric"])}. Bar lengths use a shared linear scale.</desc>',
         f'<rect x="1" y="1" width="1098" height="{height - 2}" rx="22" fill="#0D1925" stroke="#263D4B"/>',
         '<g font-family="Segoe UI, Helvetica, Arial, sans-serif">',
-        '<text x="36" y="57" font-size="27" font-weight="700" fill="#F2F6FA">Languages I use</text>',
-        '<text x="36" y="91" font-size="18" fill="#A9BFCE">Share of GitHub-reported bytes</text>',
-        '<text x="1060" y="135" text-anchor="end" font-size="15" fill="#A9BFCE">SHARE</text>',
+        f'<text x="36" y="55" font-size="26" font-weight="700" fill="#F2F6FA">{heading}</text>',
+        f'<text x="1064" y="55" text-anchor="end" font-size="15" letter-spacing="2" fill="#91E5CD">{"ALL LANGUAGES" if all_languages else "MOST USED"}</text>',
+        '<path d="M36 80H1064" stroke="#263D4B"/>',
     ]
-    for tick in range(0, axis_max + 1, 10):
-        x = 300 + 630 * tick / axis_max
-        parts += [
-            f'<path d="M{x:.2f} 154V{plot_bottom}" stroke="#A9BFCE" stroke-opacity=".12"/>',
-            f'<text x="{x:.2f}" y="135" text-anchor="middle" font-size="15" fill="#A9BFCE">{tick}%</text>',
-        ]
-    for index, (name, share) in enumerate(shares):
-        y = 176 + index * 55
-        width = 630 * share / axis_max
-        color = COLORS.get(name, "#91E5CD")
+    for index, (name, size) in enumerate(languages):
+        y = 121 + index * 57
+        width = 570 * size / maximum
+        if name in COLORS:
+            color = COLORS[name]
+        else:
+            import hashlib, colorsys
+            hue = int(hashlib.sha256(name.encode()).hexdigest()[:4], 16) / 65535
+            color = '#%02X%02X%02X' % tuple(round(v * 255) for v in colorsys.hls_to_rgb(hue, .72, .6))
         label = escape(name)
         parts += [
             f'<text x="36" y="{y + 7}" font-size="21" fill="#E4EDF3">{label}</text>',
-            f'<rect x="300" y="{y - 14}" width="630" height="24" rx="5" fill="#1A2B38"/>',
-            f'<rect x="300" y="{y - 14}" width="{width:.3f}" height="24" rx="{min(5, width / 2):.3f}" fill="{color}"><title>{label}: {totals[name]:,} bytes ({share:.2f}%)</title></rect>',
-            f'<text x="1060" y="{y + 7}" text-anchor="end" font-size="22" font-weight="600" fill="{color}">{share:.2f}%</text>',
+            f'<rect x="290" y="{y - 13}" width="570" height="20" rx="5" fill="#1A2B38"/>',
+            f'<rect x="290" y="{y - 13}" width="{width:.3f}" height="20" rx="{min(5, width / 2):.3f}" fill="{color}"><title>{label}: {size:,} {unit}</title></rect>',
+            f'<text x="1064" y="{y + 7}" text-anchor="end" font-size="23" font-weight="600" fill="{color}">{size:,}</text>',
         ]
     parts += [
-        f'<path d="M36 {footer - 24}H1064" stroke="#263D4B"/>',
-        f'<text x="36" y="{footer + 4}" font-size="16" fill="#A9BFCE">{coverage} · public forks and profile repository excluded</text>',
-        f'<text x="36" y="{footer + 31}" font-size="16" fill="#A9BFCE">Notebook files are reported as Jupyter Notebook. These percentages do not measure proficiency.</text>',
-        f'<text x="36" y="{footer + 58}" font-size="15" fill="#8096A7">Updated {date} (Tehran) · Source: GitHub languages API</text>',
         '</g>',
         '</svg>',
     ]
@@ -181,6 +190,7 @@ def main():
     SNAPSHOT.parent.mkdir(parents=True, exist_ok=True)
     changed = write_if_changed(SNAPSHOT, json.dumps(snapshot, indent=2) + "\n")
     changed = write_if_changed(CHART, svg) or changed
+    changed = write_if_changed(CHART.with_name('language-stats-all.svg'), render_chart(snapshot, all_languages=True)) or changed
     status = "Updated" if changed else "Unchanged"
     print(f"{status}: {CHART.relative_to(ROOT)} (aggregate language statistics).")
 

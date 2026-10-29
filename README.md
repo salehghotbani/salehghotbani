@@ -3,26 +3,27 @@
 </p>
 
 <p align="center">
-  <strong>AI research &nbsp; / &nbsp; Computer vision &nbsp; / &nbsp; Interactive web</strong>
-</p>
-
-<p align="center">
   <a href="https://github.com/salehghotbani?tab=repositories">Explore my repositories</a>
-  &nbsp; · &nbsp;
-  <a href="https://salehghotbani.github.io/Game-React-Tutorial/">Try React Quest</a>
-  &nbsp; · &nbsp;
-  <a href="https://salehghotbani.github.io/Game-Quoridor/">Play Quoridor</a>
 </p>
 
 ## A little about me
 
-I'm **Saleh Ghotbani**, a researcher and web developer. My public work brings together deep learning experiments, computer vision, and interactive applications — from comparing neural networks to building a 3D space for learning React.
+I'm **Saleh Ghotbani**, a researcher and web developer working with deep learning, computer vision, and interactive applications.
 
 ## Languages I use
 
 <p align="center">
-  <img src="assets/language-stats.svg" width="100%" alt="Horizontal bar chart showing aggregate language usage, measured by GitHub-reported bytes. Repository coverage is indicated in the chart." />
+  <img src="assets/language-stats.svg" width="100%" alt="Most used languages, ranked by the aggregate source measurement indicated in the chart." />
 </p>
+
+<details>
+<summary>All languages</summary>
+
+<p align="center">
+  <img src="assets/language-stats-all.svg" width="100%" alt="Full language breakdown with absolute counts." />
+</p>
+
+</details>
 
 ## Tools I work with
 

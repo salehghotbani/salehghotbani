@@ -2,7 +2,17 @@
 
 The chart can include the language totals of all private repositories owned by `salehghotbani`, including private forks. Only aggregate byte counts are published. Repository names, URLs, code, and individual repository breakdowns are not saved in the snapshot or chart.
 
-The collector, aggregation logic, and SVG renderer are custom Python code in `scripts/update-language-stats.py`. They use only Python's standard library. GitHub's languages API supplies byte counts; no chart package or hosted statistics-card service is used. Pagination reads every result page, including accounts with more than 100 repositories.
+The collector, aggregation logic, source-line counter, and SVG renderer are custom Python code in `scripts/`. They use only Python's standard library. No chart package or hosted statistics-card service is used. Pagination reads every result page, including accounts with more than 100 repositories.
+
+## Source line counting
+
+The `lines` mode streams the default branch's source archive without extracting or retaining files. It counts **non-empty physical source lines, including comments**, for the source extensions listed in `scripts/source_lines.py`. Notebook code cells are counted under their declared language; markdown cells and execution outputs are excluded. Common dependency/build/vendor directories, minified JS/CSS, declaration files and recognized generated-file headers are excluded. This is a documented source-line measure rather than a complete language parser; unrecognized generated files may still count.
+
+Only aggregate counts are saved. No private source files, repository names, signed URLs or file paths are published. The main card shows eight languages; the expandable card shows every counted language. Both use the same linear scale within their card, and the absolute values are printed alongside the bars.
+
+Line mode needs **Contents: Read-only** in addition to **Metadata: Read-only** on the existing all-repository token. A permission preflight runs before any archive collection. Failed reads preserve the previous statistics instead of publishing a partial result.
+
+To try it, run **Refresh language stats** manually with `metric: lines`. After a successful complete run, set the Actions repository variable `LANGUAGE_STATS_METRIC` to `lines` so daily runs use the same measure. The default is `bytes` until that variable is set; byte mode uses GitHub's languages API and needs Metadata only. The published chart's heading always states its actual unit, and bytes are never relabeled as lines.
 
 ## One-time setup
 

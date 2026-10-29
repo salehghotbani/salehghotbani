@@ -4,12 +4,18 @@ on:
   schedule:
     - cron: '17 0 * * *' # Daily at 03:47 Tehran time (00:17 UTC).
   workflow_dispatch:
+    inputs:
+      metric:
+        description: Measurement to publish
+        type: choice
+        default: lines
+        options: [lines, bytes]
   push:
     branches: [main]
     paths:
       - '.github/workflows/language-stats.yml'
-      - 'scripts/update-language-stats.py'
-      - 'tests/test_language_stats.py'
+      - 'scripts/**'
+      - 'tests/**'
 
 permissions:
   contents: write
@@ -41,12 +47,13 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           LANGUAGE_STATS_TOKEN: ${{ secrets.LANGUAGE_STATS_TOKEN }}
+          LANGUAGE_STATS_METRIC: ${{ inputs.metric || vars.LANGUAGE_STATS_METRIC || 'bytes' }}
         run: python scripts/update-language-stats.py
 
       - name: Publish changed language data
         shell: bash
         run: |
-          git add -- assets/language-stats.json assets/language-stats.svg
+          git add -- assets/language-stats.json assets/language-stats.svg assets/language-stats-all.svg
           if git diff --cached --quiet; then
             echo "Language data is unchanged."
             exit 0
