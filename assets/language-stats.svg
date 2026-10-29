@@ -1,42 +1,42 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="572" viewBox="0 0 1100 572" role="img" aria-labelledby="title desc">
 <title id="title">Languages I use</title>
-<desc id="desc">HTML: 381,905,989 bytes; Jupyter Notebook: 12,379,654 bytes; TypeScript: 3,835,016 bytes; Python: 2,106,984 bytes; Java: 1,196,903 bytes; JavaScript: 1,010,884 bytes; GDScript: 641,865 bytes; TeX: 256,805 bytes. GitHub-reported language bytes. Bar lengths use a shared linear scale.</desc>
+<desc id="desc">HTML: 224,365 lines; TypeScript: 102,211 lines; Python: 44,391 lines; Java: 25,343 lines; JavaScript: 23,305 lines; GDScript: 12,006 lines; CSS: 10,617 lines; C++: 2,991 lines. Non-empty source lines (comments included). Bar lengths use a shared linear scale.</desc>
 <rect x="1" y="1" width="1098" height="570" rx="22" fill="#0D1925" stroke="#263D4B"/>
 <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
-<text x="36" y="55" font-size="26" font-weight="700" fill="#F2F6FA">Source size (bytes)</text>
+<text x="36" y="55" font-size="26" font-weight="700" fill="#F2F6FA">Source lines</text>
 <text x="1064" y="55" text-anchor="end" font-size="15" letter-spacing="2" fill="#91E5CD">MOST USED</text>
 <path d="M36 80H1064" stroke="#263D4B"/>
 <text x="36" y="128" font-size="21" fill="#E4EDF3">HTML</text>
 <rect x="290" y="108" width="570" height="20" rx="5" fill="#1A2B38"/>
-<rect x="290" y="108" width="570.000" height="20" rx="5.000" fill="#FF786A"><title>HTML: 381,905,989 bytes</title></rect>
-<text x="1064" y="128" text-anchor="end" font-size="23" font-weight="600" fill="#FF786A">381,905,989</text>
-<text x="36" y="185" font-size="21" fill="#E4EDF3">Jupyter Notebook</text>
+<rect x="290" y="108" width="570.000" height="20" rx="5.000" fill="#FF786A"><title>HTML: 224,365 lines</title></rect>
+<text x="1064" y="128" text-anchor="end" font-size="23" font-weight="600" fill="#FF786A">224,365</text>
+<text x="36" y="185" font-size="21" fill="#E4EDF3">TypeScript</text>
 <rect x="290" y="165" width="570" height="20" rx="5" fill="#1A2B38"/>
-<rect x="290" y="165" width="18.477" height="20" rx="5.000" fill="#F08B52"><title>Jupyter Notebook: 12,379,654 bytes</title></rect>
-<text x="1064" y="185" text-anchor="end" font-size="23" font-weight="600" fill="#F08B52">12,379,654</text>
-<text x="36" y="242" font-size="21" fill="#E4EDF3">TypeScript</text>
+<rect x="290" y="165" width="259.667" height="20" rx="5.000" fill="#65A9FF"><title>TypeScript: 102,211 lines</title></rect>
+<text x="1064" y="185" text-anchor="end" font-size="23" font-weight="600" fill="#65A9FF">102,211</text>
+<text x="36" y="242" font-size="21" fill="#E4EDF3">Python</text>
 <rect x="290" y="222" width="570" height="20" rx="5" fill="#1A2B38"/>
-<rect x="290" y="222" width="5.724" height="20" rx="2.862" fill="#65A9FF"><title>TypeScript: 3,835,016 bytes</title></rect>
-<text x="1064" y="242" text-anchor="end" font-size="23" font-weight="600" fill="#65A9FF">3,835,016</text>
-<text x="36" y="299" font-size="21" fill="#E4EDF3">Python</text>
+<rect x="290" y="222" width="112.775" height="20" rx="5.000" fill="#69C99D"><title>Python: 44,391 lines</title></rect>
+<text x="1064" y="242" text-anchor="end" font-size="23" font-weight="600" fill="#69C99D">44,391</text>
+<text x="36" y="299" font-size="21" fill="#E4EDF3">Java</text>
 <rect x="290" y="279" width="570" height="20" rx="5" fill="#1A2B38"/>
-<rect x="290" y="279" width="3.145" height="20" rx="1.572" fill="#69C99D"><title>Python: 2,106,984 bytes</title></rect>
-<text x="1064" y="299" text-anchor="end" font-size="23" font-weight="600" fill="#69C99D">2,106,984</text>
-<text x="36" y="356" font-size="21" fill="#E4EDF3">Java</text>
+<rect x="290" y="279" width="64.384" height="20" rx="5.000" fill="#C69B60"><title>Java: 25,343 lines</title></rect>
+<text x="1064" y="299" text-anchor="end" font-size="23" font-weight="600" fill="#C69B60">25,343</text>
+<text x="36" y="356" font-size="21" fill="#E4EDF3">JavaScript</text>
 <rect x="290" y="336" width="570" height="20" rx="5" fill="#1A2B38"/>
-<rect x="290" y="336" width="1.786" height="20" rx="0.893" fill="#C69B60"><title>Java: 1,196,903 bytes</title></rect>
-<text x="1064" y="356" text-anchor="end" font-size="23" font-weight="600" fill="#C69B60">1,196,903</text>
-<text x="36" y="413" font-size="21" fill="#E4EDF3">JavaScript</text>
+<rect x="290" y="336" width="59.206" height="20" rx="5.000" fill="#F4D75E"><title>JavaScript: 23,305 lines</title></rect>
+<text x="1064" y="356" text-anchor="end" font-size="23" font-weight="600" fill="#F4D75E">23,305</text>
+<text x="36" y="413" font-size="21" fill="#E4EDF3">GDScript</text>
 <rect x="290" y="393" width="570" height="20" rx="5" fill="#1A2B38"/>
-<rect x="290" y="393" width="1.509" height="20" rx="0.754" fill="#F4D75E"><title>JavaScript: 1,010,884 bytes</title></rect>
-<text x="1064" y="413" text-anchor="end" font-size="23" font-weight="600" fill="#F4D75E">1,010,884</text>
-<text x="36" y="470" font-size="21" fill="#E4EDF3">GDScript</text>
+<rect x="290" y="393" width="30.501" height="20" rx="5.000" fill="#79B8DB"><title>GDScript: 12,006 lines</title></rect>
+<text x="1064" y="413" text-anchor="end" font-size="23" font-weight="600" fill="#79B8DB">12,006</text>
+<text x="36" y="470" font-size="21" fill="#E4EDF3">CSS</text>
 <rect x="290" y="450" width="570" height="20" rx="5" fill="#1A2B38"/>
-<rect x="290" y="450" width="0.958" height="20" rx="0.479" fill="#79B8DB"><title>GDScript: 641,865 bytes</title></rect>
-<text x="1064" y="470" text-anchor="end" font-size="23" font-weight="600" fill="#79B8DB">641,865</text>
-<text x="36" y="527" font-size="21" fill="#E4EDF3">TeX</text>
+<rect x="290" y="450" width="26.973" height="20" rx="5.000" fill="#DE8CDA"><title>CSS: 10,617 lines</title></rect>
+<text x="1064" y="470" text-anchor="end" font-size="23" font-weight="600" fill="#DE8CDA">10,617</text>
+<text x="36" y="527" font-size="21" fill="#E4EDF3">C++</text>
 <rect x="290" y="507" width="570" height="20" rx="5" fill="#1A2B38"/>
-<rect x="290" y="507" width="0.383" height="20" rx="0.192" fill="#92BD7E"><title>TeX: 256,805 bytes</title></rect>
-<text x="1064" y="527" text-anchor="end" font-size="23" font-weight="600" fill="#92BD7E">256,805</text>
+<rect x="290" y="507" width="7.599" height="20" rx="3.799" fill="#F19BC1"><title>C++: 2,991 lines</title></rect>
+<text x="1064" y="527" text-anchor="end" font-size="23" font-weight="600" fill="#F19BC1">2,991</text>
 </g>
 </svg>
