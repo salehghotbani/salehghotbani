@@ -12,7 +12,7 @@ Only aggregate counts are saved. No private source files, repository names, sign
 
 Line mode needs **Contents: Read-only** in addition to **Metadata: Read-only** on the existing all-repository token. A permission preflight runs before any archive collection. Failed reads preserve the previous statistics instead of publishing a partial result.
 
-To try it, run **Refresh language stats** manually with `metric: lines`. After a successful complete run, set the Actions repository variable `LANGUAGE_STATS_METRIC` to `lines` so daily runs use the same measure. The default is `bytes` until that variable is set; byte mode uses GitHub's languages API and needs Metadata only. The published chart's heading always states its actual unit, and bytes are never relabeled as lines.
+To activate it, run **Refresh language stats** manually with `metric: lines`. Daily runs automatically retain the metric in the last successful snapshot, so line mode continues after its first complete run. An optional Actions variable `LANGUAGE_STATS_METRIC` can explicitly select `lines`, `bytes`, or `auto`. Byte mode uses GitHub's languages API and needs Metadata only. The published chart's heading always states its actual unit, and bytes are never relabeled as lines.
 
 ## One-time setup
 

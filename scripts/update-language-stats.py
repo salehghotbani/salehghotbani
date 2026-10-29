@@ -51,7 +51,10 @@ def fetch_snapshot():
     totals = Counter()
     repository_count = 0
     private_token = os.environ.get("LANGUAGE_STATS_TOKEN", "").strip()
-    mode = os.environ.get('LANGUAGE_STATS_METRIC', 'bytes')
+    mode = os.environ.get('LANGUAGE_STATS_METRIC', 'auto')
+    if mode == 'auto':
+        saved = json.loads(SNAPSHOT.read_text(encoding='utf-8')) if SNAPSHOT.exists() else {}
+        mode = 'lines' if saved.get('metric', '').startswith('Non-empty source lines') else 'bytes'
     if mode not in ('bytes', 'lines'):
         raise ValueError('Unknown language statistics metric.')
     if mode == 'lines' and private_token:
@@ -59,7 +62,12 @@ def fetch_snapshot():
         sample = get_json('/user/repos?visibility=private&affiliation=owner&per_page=1&page=1', token=private_token)
         if sample:
             from urllib.parse import quote
-            get_json(f"/repos/{USER}/{quote(sample[0]['name'], safe='')}/contents", token=private_token)
+            try:
+                get_json(f"/repos/{USER}/{quote(sample[0]['name'], safe='')}/contents", token=private_token)
+            except HTTPError as error:
+                if error.code in (401, 403, 404):
+                    raise ValueError(f'Private source access denied (HTTP {error.code}). LANGUAGE_STATS_TOKEN needs Contents: Read-only on All repositories. Previous chart preserved.') from None
+                raise
     sources = [(f"/users/{USER}/repos?type=owner", None, False)]
     if private_token:
         sources.append(("/user/repos?visibility=private&affiliation=owner", private_token, True))

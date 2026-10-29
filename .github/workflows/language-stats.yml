@@ -47,7 +47,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           LANGUAGE_STATS_TOKEN: ${{ secrets.LANGUAGE_STATS_TOKEN }}
-          LANGUAGE_STATS_METRIC: ${{ inputs.metric || vars.LANGUAGE_STATS_METRIC || 'bytes' }}
+          LANGUAGE_STATS_METRIC: ${{ inputs.metric || vars.LANGUAGE_STATS_METRIC || 'auto' }}
         run: python scripts/update-language-stats.py
 
       - name: Publish changed language data

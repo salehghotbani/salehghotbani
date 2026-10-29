@@ -9,7 +9,7 @@ import tempfile
 import unittest
 from contextlib import redirect_stderr
 from unittest.mock import patch
-from urllib.error import URLError
+from urllib.error import URLError, HTTPError
 
 
 SCRIPT = Path(__file__).resolve().parents[1] / "scripts" / "update-language-stats.py"
@@ -132,6 +132,22 @@ class RefreshTests(unittest.TestCase):
         self.assertEqual(snapshot['languages'], {'Python': 12})
         self.assertNotIn('public-example', json.dumps(snapshot))
         self.assertIn('Python: 12 lines', stats.render_chart(snapshot))
+
+    def test_private_permission_error_is_actionable_and_anonymous(self):
+        responses = [[self.repo('private-example', private=True)], HTTPError('https://withheld/private-example', 403, 'Forbidden', {}, None)]
+        with patch.dict(os.environ, {'LANGUAGE_STATS_TOKEN': 'test-credential', 'LANGUAGE_STATS_METRIC': 'lines'}), patch.object(stats, 'get_json', side_effect=responses):
+            with self.assertRaises(ValueError) as error:
+                stats.fetch_snapshot()
+        self.assertIn('Contents: Read-only', str(error.exception))
+        self.assertNotIn('private-example', str(error.exception))
+
+    def test_daily_auto_mode_keeps_successful_line_counts(self):
+        previous = copy.deepcopy(self.data)
+        previous['metric'] = 'Non-empty source lines (comments included)'
+        self.snapshot.write_text(json.dumps(previous), encoding='utf-8')
+        with patch.dict(os.environ, {'LANGUAGE_STATS_METRIC': 'auto'}), patch.object(stats, 'get_json', return_value=[self.repo('public-example')]), patch.object(stats, 'repository_lines', return_value={'Python': 12}):
+            snapshot = stats.fetch_snapshot()
+        self.assertEqual(snapshot['metric'], previous['metric'])
 
     def test_chart_is_compact_and_has_no_footer_or_percentages(self):
         snapshot = copy.deepcopy(self.data)
