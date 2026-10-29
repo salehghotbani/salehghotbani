@@ -1,60 +1,116 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="763" viewBox="0 0 1100 763" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1368" viewBox="0 0 1100 1368" role="img" aria-labelledby="title desc">
 <title id="title">Languages I use</title>
-<desc id="desc">Jupyter Notebook: 35.19%; Java: 30.57%; TypeScript: 19.96%; JavaScript: 9.43%; PowerShell: 2.78%; CSS: 1.53%; HTML: 0.48%; Dockerfile: 0.04%; Python: 0.03%. Share of GitHub-reported bytes; not proficiency. Public forks and the profile repository are excluded.</desc>
-<rect x="1" y="1" width="1098" height="761" rx="22" fill="#0D1925" stroke="#263D4B"/>
+<desc id="desc">HTML: 94.54%; Jupyter Notebook: 3.06%; TypeScript: 0.95%; Python: 0.52%; Java: 0.30%; JavaScript: 0.25%; GDScript: 0.16%; TeX: 0.06%; CSS: 0.05%; C++: 0.05%; PowerShell: 0.04%; Shell: 0.01%; Dockerfile: 0.00%; SCSS: 0.00%; Swift: 0.00%; C#: 0.00%; CMake: 0.00%; Rust: 0.00%; Mako: 0.00%; C: 0.00%. Share of GitHub-reported bytes; not proficiency. Public forks and the profile repository are excluded.</desc>
+<rect x="1" y="1" width="1098" height="1366" rx="22" fill="#0D1925" stroke="#263D4B"/>
 <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
 <text x="36" y="57" font-size="27" font-weight="700" fill="#F2F6FA">Languages I use</text>
 <text x="36" y="91" font-size="18" fill="#A9BFCE">Share of GitHub-reported bytes</text>
 <text x="1060" y="135" text-anchor="end" font-size="15" fill="#A9BFCE">SHARE</text>
-<path d="M300.00 154V636" stroke="#A9BFCE" stroke-opacity=".12"/>
+<path d="M300.00 154V1241" stroke="#A9BFCE" stroke-opacity=".12"/>
 <text x="300.00" y="135" text-anchor="middle" font-size="15" fill="#A9BFCE">0%</text>
-<path d="M457.50 154V636" stroke="#A9BFCE" stroke-opacity=".12"/>
-<text x="457.50" y="135" text-anchor="middle" font-size="15" fill="#A9BFCE">10%</text>
-<path d="M615.00 154V636" stroke="#A9BFCE" stroke-opacity=".12"/>
-<text x="615.00" y="135" text-anchor="middle" font-size="15" fill="#A9BFCE">20%</text>
-<path d="M772.50 154V636" stroke="#A9BFCE" stroke-opacity=".12"/>
-<text x="772.50" y="135" text-anchor="middle" font-size="15" fill="#A9BFCE">30%</text>
-<path d="M930.00 154V636" stroke="#A9BFCE" stroke-opacity=".12"/>
-<text x="930.00" y="135" text-anchor="middle" font-size="15" fill="#A9BFCE">40%</text>
-<text x="36" y="183" font-size="21" fill="#E4EDF3">Jupyter Notebook</text>
+<path d="M363.00 154V1241" stroke="#A9BFCE" stroke-opacity=".12"/>
+<text x="363.00" y="135" text-anchor="middle" font-size="15" fill="#A9BFCE">10%</text>
+<path d="M426.00 154V1241" stroke="#A9BFCE" stroke-opacity=".12"/>
+<text x="426.00" y="135" text-anchor="middle" font-size="15" fill="#A9BFCE">20%</text>
+<path d="M489.00 154V1241" stroke="#A9BFCE" stroke-opacity=".12"/>
+<text x="489.00" y="135" text-anchor="middle" font-size="15" fill="#A9BFCE">30%</text>
+<path d="M552.00 154V1241" stroke="#A9BFCE" stroke-opacity=".12"/>
+<text x="552.00" y="135" text-anchor="middle" font-size="15" fill="#A9BFCE">40%</text>
+<path d="M615.00 154V1241" stroke="#A9BFCE" stroke-opacity=".12"/>
+<text x="615.00" y="135" text-anchor="middle" font-size="15" fill="#A9BFCE">50%</text>
+<path d="M678.00 154V1241" stroke="#A9BFCE" stroke-opacity=".12"/>
+<text x="678.00" y="135" text-anchor="middle" font-size="15" fill="#A9BFCE">60%</text>
+<path d="M741.00 154V1241" stroke="#A9BFCE" stroke-opacity=".12"/>
+<text x="741.00" y="135" text-anchor="middle" font-size="15" fill="#A9BFCE">70%</text>
+<path d="M804.00 154V1241" stroke="#A9BFCE" stroke-opacity=".12"/>
+<text x="804.00" y="135" text-anchor="middle" font-size="15" fill="#A9BFCE">80%</text>
+<path d="M867.00 154V1241" stroke="#A9BFCE" stroke-opacity=".12"/>
+<text x="867.00" y="135" text-anchor="middle" font-size="15" fill="#A9BFCE">90%</text>
+<path d="M930.00 154V1241" stroke="#A9BFCE" stroke-opacity=".12"/>
+<text x="930.00" y="135" text-anchor="middle" font-size="15" fill="#A9BFCE">100%</text>
+<text x="36" y="183" font-size="21" fill="#E4EDF3">HTML</text>
 <rect x="300" y="162" width="630" height="24" rx="5" fill="#1A2B38"/>
-<rect x="300" y="162" width="554.258" height="24" rx="5.000" fill="#F08B52"><title>Jupyter Notebook: 1,218,195 bytes (35.19%)</title></rect>
-<text x="1060" y="183" text-anchor="end" font-size="22" font-weight="600" fill="#F08B52">35.19%</text>
-<text x="36" y="238" font-size="21" fill="#E4EDF3">Java</text>
+<rect x="300" y="162" width="595.594" height="24" rx="5.000" fill="#FF786A"><title>HTML: 381,905,989 bytes (94.54%)</title></rect>
+<text x="1060" y="183" text-anchor="end" font-size="22" font-weight="600" fill="#FF786A">94.54%</text>
+<text x="36" y="238" font-size="21" fill="#E4EDF3">Jupyter Notebook</text>
 <rect x="300" y="217" width="630" height="24" rx="5" fill="#1A2B38"/>
-<rect x="300" y="217" width="481.414" height="24" rx="5.000" fill="#C69B60"><title>Java: 1,058,091 bytes (30.57%)</title></rect>
-<text x="1060" y="238" text-anchor="end" font-size="22" font-weight="600" fill="#C69B60">30.57%</text>
+<rect x="300" y="217" width="19.306" height="24" rx="5.000" fill="#F08B52"><title>Jupyter Notebook: 12,379,654 bytes (3.06%)</title></rect>
+<text x="1060" y="238" text-anchor="end" font-size="22" font-weight="600" fill="#F08B52">3.06%</text>
 <text x="36" y="293" font-size="21" fill="#E4EDF3">TypeScript</text>
 <rect x="300" y="272" width="630" height="24" rx="5" fill="#1A2B38"/>
-<rect x="300" y="272" width="314.393" height="24" rx="5.000" fill="#65A9FF"><title>TypeScript: 690,999 bytes (19.96%)</title></rect>
-<text x="1060" y="293" text-anchor="end" font-size="22" font-weight="600" fill="#65A9FF">19.96%</text>
-<text x="36" y="348" font-size="21" fill="#E4EDF3">JavaScript</text>
+<rect x="300" y="272" width="5.981" height="24" rx="2.990" fill="#65A9FF"><title>TypeScript: 3,835,016 bytes (0.95%)</title></rect>
+<text x="1060" y="293" text-anchor="end" font-size="22" font-weight="600" fill="#65A9FF">0.95%</text>
+<text x="36" y="348" font-size="21" fill="#E4EDF3">Python</text>
 <rect x="300" y="327" width="630" height="24" rx="5" fill="#1A2B38"/>
-<rect x="300" y="327" width="148.583" height="24" rx="5.000" fill="#F4D75E"><title>JavaScript: 326,567 bytes (9.43%)</title></rect>
-<text x="1060" y="348" text-anchor="end" font-size="22" font-weight="600" fill="#F4D75E">9.43%</text>
-<text x="36" y="403" font-size="21" fill="#E4EDF3">PowerShell</text>
+<rect x="300" y="327" width="3.286" height="24" rx="1.643" fill="#91E5CD"><title>Python: 2,106,984 bytes (0.52%)</title></rect>
+<text x="1060" y="348" text-anchor="end" font-size="22" font-weight="600" fill="#91E5CD">0.52%</text>
+<text x="36" y="403" font-size="21" fill="#E4EDF3">Java</text>
 <rect x="300" y="382" width="630" height="24" rx="5" fill="#1A2B38"/>
-<rect x="300" y="382" width="43.716" height="24" rx="5.000" fill="#B49CFF"><title>PowerShell: 96,082 bytes (2.78%)</title></rect>
-<text x="1060" y="403" text-anchor="end" font-size="22" font-weight="600" fill="#B49CFF">2.78%</text>
-<text x="36" y="458" font-size="21" fill="#E4EDF3">CSS</text>
+<rect x="300" y="382" width="1.867" height="24" rx="0.933" fill="#C69B60"><title>Java: 1,196,903 bytes (0.30%)</title></rect>
+<text x="1060" y="403" text-anchor="end" font-size="22" font-weight="600" fill="#C69B60">0.30%</text>
+<text x="36" y="458" font-size="21" fill="#E4EDF3">JavaScript</text>
 <rect x="300" y="437" width="630" height="24" rx="5" fill="#1A2B38"/>
-<rect x="300" y="437" width="24.029" height="24" rx="5.000" fill="#DE8CDA"><title>CSS: 52,812 bytes (1.53%)</title></rect>
-<text x="1060" y="458" text-anchor="end" font-size="22" font-weight="600" fill="#DE8CDA">1.53%</text>
-<text x="36" y="513" font-size="21" fill="#E4EDF3">HTML</text>
+<rect x="300" y="437" width="1.577" height="24" rx="0.788" fill="#F4D75E"><title>JavaScript: 1,010,884 bytes (0.25%)</title></rect>
+<text x="1060" y="458" text-anchor="end" font-size="22" font-weight="600" fill="#F4D75E">0.25%</text>
+<text x="36" y="513" font-size="21" fill="#E4EDF3">GDScript</text>
 <rect x="300" y="492" width="630" height="24" rx="5" fill="#1A2B38"/>
-<rect x="300" y="492" width="7.581" height="24" rx="3.791" fill="#FF786A"><title>HTML: 16,663 bytes (0.48%)</title></rect>
-<text x="1060" y="513" text-anchor="end" font-size="22" font-weight="600" fill="#FF786A">0.48%</text>
-<text x="36" y="568" font-size="21" fill="#E4EDF3">Dockerfile</text>
+<rect x="300" y="492" width="1.001" height="24" rx="0.501" fill="#91E5CD"><title>GDScript: 641,865 bytes (0.16%)</title></rect>
+<text x="1060" y="513" text-anchor="end" font-size="22" font-weight="600" fill="#91E5CD">0.16%</text>
+<text x="36" y="568" font-size="21" fill="#E4EDF3">TeX</text>
 <rect x="300" y="547" width="630" height="24" rx="5" fill="#1A2B38"/>
-<rect x="300" y="547" width="0.624" height="24" rx="0.312" fill="#65D4CE"><title>Dockerfile: 1,372 bytes (0.04%)</title></rect>
-<text x="1060" y="568" text-anchor="end" font-size="22" font-weight="600" fill="#65D4CE">0.04%</text>
-<text x="36" y="623" font-size="21" fill="#E4EDF3">Python</text>
+<rect x="300" y="547" width="0.400" height="24" rx="0.200" fill="#91E5CD"><title>TeX: 256,805 bytes (0.06%)</title></rect>
+<text x="1060" y="568" text-anchor="end" font-size="22" font-weight="600" fill="#91E5CD">0.06%</text>
+<text x="36" y="623" font-size="21" fill="#E4EDF3">CSS</text>
 <rect x="300" y="602" width="630" height="24" rx="5" fill="#1A2B38"/>
-<rect x="300" y="602" width="0.402" height="24" rx="0.201" fill="#91E5CD"><title>Python: 884 bytes (0.03%)</title></rect>
-<text x="1060" y="623" text-anchor="end" font-size="22" font-weight="600" fill="#91E5CD">0.03%</text>
-<path d="M36 660H1064" stroke="#263D4B"/>
-<text x="36" y="688" font-size="16" fill="#A9BFCE">Public repositories · public forks and profile repository excluded</text>
-<text x="36" y="715" font-size="16" fill="#A9BFCE">Notebook files are reported as Jupyter Notebook. These percentages do not measure proficiency.</text>
-<text x="36" y="742" font-size="15" fill="#8096A7">Updated 2026-10-29 (Tehran) · Source: GitHub languages API</text>
+<rect x="300" y="602" width="0.346" height="24" rx="0.173" fill="#DE8CDA"><title>CSS: 222,120 bytes (0.05%)</title></rect>
+<text x="1060" y="623" text-anchor="end" font-size="22" font-weight="600" fill="#DE8CDA">0.05%</text>
+<text x="36" y="678" font-size="21" fill="#E4EDF3">C++</text>
+<rect x="300" y="657" width="630" height="24" rx="5" fill="#1A2B38"/>
+<rect x="300" y="657" width="0.315" height="24" rx="0.158" fill="#91E5CD"><title>C++: 202,120 bytes (0.05%)</title></rect>
+<text x="1060" y="678" text-anchor="end" font-size="22" font-weight="600" fill="#91E5CD">0.05%</text>
+<text x="36" y="733" font-size="21" fill="#E4EDF3">PowerShell</text>
+<rect x="300" y="712" width="630" height="24" rx="5" fill="#1A2B38"/>
+<rect x="300" y="712" width="0.247" height="24" rx="0.124" fill="#B49CFF"><title>PowerShell: 158,648 bytes (0.04%)</title></rect>
+<text x="1060" y="733" text-anchor="end" font-size="22" font-weight="600" fill="#B49CFF">0.04%</text>
+<text x="36" y="788" font-size="21" fill="#E4EDF3">Shell</text>
+<rect x="300" y="767" width="630" height="24" rx="5" fill="#1A2B38"/>
+<rect x="300" y="767" width="0.032" height="24" rx="0.016" fill="#91E5CD"><title>Shell: 20,788 bytes (0.01%)</title></rect>
+<text x="1060" y="788" text-anchor="end" font-size="22" font-weight="600" fill="#91E5CD">0.01%</text>
+<text x="36" y="843" font-size="21" fill="#E4EDF3">Dockerfile</text>
+<rect x="300" y="822" width="630" height="24" rx="5" fill="#1A2B38"/>
+<rect x="300" y="822" width="0.026" height="24" rx="0.013" fill="#65D4CE"><title>Dockerfile: 16,475 bytes (0.00%)</title></rect>
+<text x="1060" y="843" text-anchor="end" font-size="22" font-weight="600" fill="#65D4CE">0.00%</text>
+<text x="36" y="898" font-size="21" fill="#E4EDF3">SCSS</text>
+<rect x="300" y="877" width="630" height="24" rx="5" fill="#1A2B38"/>
+<rect x="300" y="877" width="0.006" height="24" rx="0.003" fill="#91E5CD"><title>SCSS: 3,782 bytes (0.00%)</title></rect>
+<text x="1060" y="898" text-anchor="end" font-size="22" font-weight="600" fill="#91E5CD">0.00%</text>
+<text x="36" y="953" font-size="21" fill="#E4EDF3">Swift</text>
+<rect x="300" y="932" width="630" height="24" rx="5" fill="#1A2B38"/>
+<rect x="300" y="932" width="0.006" height="24" rx="0.003" fill="#91E5CD"><title>Swift: 3,762 bytes (0.00%)</title></rect>
+<text x="1060" y="953" text-anchor="end" font-size="22" font-weight="600" fill="#91E5CD">0.00%</text>
+<text x="36" y="1008" font-size="21" fill="#E4EDF3">C#</text>
+<rect x="300" y="987" width="630" height="24" rx="5" fill="#1A2B38"/>
+<rect x="300" y="987" width="0.003" height="24" rx="0.002" fill="#91E5CD"><title>C#: 2,187 bytes (0.00%)</title></rect>
+<text x="1060" y="1008" text-anchor="end" font-size="22" font-weight="600" fill="#91E5CD">0.00%</text>
+<text x="36" y="1063" font-size="21" fill="#E4EDF3">CMake</text>
+<rect x="300" y="1042" width="630" height="24" rx="5" fill="#1A2B38"/>
+<rect x="300" y="1042" width="0.003" height="24" rx="0.002" fill="#91E5CD"><title>CMake: 2,154 bytes (0.00%)</title></rect>
+<text x="1060" y="1063" text-anchor="end" font-size="22" font-weight="600" fill="#91E5CD">0.00%</text>
+<text x="36" y="1118" font-size="21" fill="#E4EDF3">Rust</text>
+<rect x="300" y="1097" width="630" height="24" rx="5" fill="#1A2B38"/>
+<rect x="300" y="1097" width="0.001" height="24" rx="0.000" fill="#91E5CD"><title>Rust: 640 bytes (0.00%)</title></rect>
+<text x="1060" y="1118" text-anchor="end" font-size="22" font-weight="600" fill="#91E5CD">0.00%</text>
+<text x="36" y="1173" font-size="21" fill="#E4EDF3">Mako</text>
+<rect x="300" y="1152" width="630" height="24" rx="5" fill="#1A2B38"/>
+<rect x="300" y="1152" width="0.001" height="24" rx="0.000" fill="#91E5CD"><title>Mako: 635 bytes (0.00%)</title></rect>
+<text x="1060" y="1173" text-anchor="end" font-size="22" font-weight="600" fill="#91E5CD">0.00%</text>
+<text x="36" y="1228" font-size="21" fill="#E4EDF3">C</text>
+<rect x="300" y="1207" width="630" height="24" rx="5" fill="#1A2B38"/>
+<rect x="300" y="1207" width="0.000" height="24" rx="0.000" fill="#91E5CD"><title>C: 189 bytes (0.00%)</title></rect>
+<text x="1060" y="1228" text-anchor="end" font-size="22" font-weight="600" fill="#91E5CD">0.00%</text>
+<path d="M36 1265H1064" stroke="#263D4B"/>
+<text x="36" y="1293" font-size="16" fill="#A9BFCE">Public + authorized private repositories · public forks and profile repository excluded</text>
+<text x="36" y="1320" font-size="16" fill="#A9BFCE">Notebook files are reported as Jupyter Notebook. These percentages do not measure proficiency.</text>
+<text x="36" y="1347" font-size="15" fill="#8096A7">Updated 2026-10-29 (Tehran) · Source: GitHub languages API</text>
 </g>
 </svg>
