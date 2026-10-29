@@ -99,7 +99,7 @@ class RefreshTests(unittest.TestCase):
         private_repos = [
             self.repo("private-example", private=True),
             self.repo("foreign-example", private=True, owner="another-owner"),
-            self.repo("private-fork", private=True, fork=True),
+            self.repo(stats.USER, private=True),
         ]
         responses = [[self.repo("public-example")], {"Python": 100}, private_repos, {"Java": 300}]
         with patch.dict(os.environ, {"LANGUAGE_STATS_TOKEN": "test-credential"}), patch.object(stats, "get_json", side_effect=responses) as request:
@@ -116,13 +116,26 @@ class RefreshTests(unittest.TestCase):
         self.assertIn("Java: 75.00%", published)
 
     def test_private_repository_pagination(self):
-        skipped = [self.repo(f"fork-{index}", private=True, fork=True) for index in range(100)]
-        responses = [[], skipped, [self.repo("last-example", private=True)], {"Java": 100}]
-        with patch.dict(os.environ, {"LANGUAGE_STATS_TOKEN": "test-credential"}), patch.object(stats, "get_json", side_effect=responses) as request:
+        repos = [self.repo(f"private-project-{index}", private=True, fork=index % 2 == 0) for index in range(237)]
+        pages = []
+
+        def respond(path, **kwargs):
+            if path.startswith(f"/users/{stats.USER}/repos?"):
+                return []
+            if path.startswith("/user/repos?"):
+                page = int(path.rsplit("page=", 1)[1])
+                pages.append(page)
+                return repos[(page - 1) * 100:page * 100]
+            if path.endswith("/languages"):
+                return {"Python": 10, "Java": 5}
+            self.fail("Unexpected API request")
+
+        with patch.dict(os.environ, {"LANGUAGE_STATS_TOKEN": "test-credential"}), patch.object(stats, "get_json", side_effect=respond):
             snapshot = stats.fetch_snapshot()
-        self.assertIn("page=2", request.call_args_list[2].args[0])
-        self.assertEqual(snapshot["languages"], {"Java": 100})
-        self.assertEqual(snapshot["repository_count"], 1)
+        self.assertEqual(pages, [1, 2, 3])
+        self.assertEqual(snapshot["languages"], {"Python": 2370, "Java": 1185})
+        self.assertEqual(snapshot["repository_count"], 237)
+        self.assertNotIn("private-project-", json.dumps(snapshot) + stats.render_chart(snapshot))
 
     def test_missing_private_credential_does_not_replace_private_totals(self):
         previous = copy.deepcopy(self.data)

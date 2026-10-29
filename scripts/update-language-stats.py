@@ -56,7 +56,7 @@ def fetch_snapshot():
             for repo in batch:
                 if (
                     repo["private"] != private
-                    or repo["fork"]
+                    or (repo["fork"] and not private)
                     or repo["name"].lower() == USER.lower()
                     or repo["owner"]["login"].lower() != USER.lower()
                 ):
@@ -72,7 +72,7 @@ def fetch_snapshot():
         "user": USER,
         "retrieved_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "metric": "GitHub-reported language bytes",
-        "scope": "Owned repositories; forks and profile repository excluded",
+        "scope": "Owned repositories; public forks and profile repository excluded",
         "visibility": "public_and_authorized_private" if private_token else "public",
         "repository_count": repository_count,
         "languages": dict(sorted(totals.items())),
@@ -117,7 +117,7 @@ def render_chart(snapshot):
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="{height}" viewBox="0 0 1100 {height}" role="img" aria-labelledby="title desc">',
         '<title id="title">Languages I use</title>',
-        f'<desc id="desc">{escape(description)}. Share of GitHub-reported bytes; not proficiency. Forks and the profile repository are excluded.</desc>',
+        f'<desc id="desc">{escape(description)}. Share of GitHub-reported bytes; not proficiency. Public forks and the profile repository are excluded.</desc>',
         f'<rect x="1" y="1" width="1098" height="{height - 2}" rx="22" fill="#0D1925" stroke="#263D4B"/>',
         '<g font-family="Segoe UI, Helvetica, Arial, sans-serif">',
         '<text x="36" y="57" font-size="27" font-weight="700" fill="#F2F6FA">Languages I use</text>',
@@ -143,7 +143,7 @@ def render_chart(snapshot):
         ]
     parts += [
         f'<path d="M36 {footer - 24}H1064" stroke="#263D4B"/>',
-        f'<text x="36" y="{footer + 4}" font-size="16" fill="#A9BFCE">{coverage} · forks and profile repository excluded</text>',
+        f'<text x="36" y="{footer + 4}" font-size="16" fill="#A9BFCE">{coverage} · public forks and profile repository excluded</text>',
         f'<text x="36" y="{footer + 31}" font-size="16" fill="#A9BFCE">Notebook files are reported as Jupyter Notebook. These percentages do not measure proficiency.</text>',
         f'<text x="36" y="{footer + 58}" font-size="15" fill="#8096A7">Updated {date} (Tehran) · Source: GitHub languages API</text>',
         '</g>',

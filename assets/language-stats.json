@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "user": "salehghotbani",
-  "retrieved_at": "2026-10-29T05:53:19+00:00",
+  "retrieved_at": "2026-10-29T08:42:27+00:00",
   "metric": "GitHub-reported language bytes",
-  "scope": "Owned repositories; forks and profile repository excluded",
+  "scope": "Owned repositories; public forks and profile repository excluded",
   "visibility": "public",
   "repository_count": 6,
   "languages": {

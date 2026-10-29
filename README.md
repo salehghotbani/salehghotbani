@@ -51,7 +51,7 @@ I'm **Saleh Ghotbani**, a researcher and web developer. My public work brings to
   <img src="assets/language-stats.svg" width="100%" alt="Horizontal bar chart showing aggregate language usage, measured by GitHub-reported bytes. Repository coverage is indicated in the chart." />
 </p>
 
-The bars show **code volume, not proficiency**. GitHub reports notebook files as **Jupyter Notebook**. Forks and this profile repository are excluded.
+The bars show **code volume, not proficiency**. GitHub reports notebook files as **Jupyter Notebook**. Public forks and this profile repository are excluded.
 
 ## Tools I work with
 
