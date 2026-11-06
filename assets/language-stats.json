@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "user": "salehghotbani",
-  "retrieved_at": "2026-11-02T06:15:40+00:00",
+  "retrieved_at": "2026-11-06T06:56:13+00:00",
   "metric": "Non-empty source lines (comments included)",
   "scope": "Owned repositories; public forks and profile repository excluded",
   "visibility": "public_and_authorized_private",
-  "repository_count": 47,
+  "repository_count": 48,
   "languages": {
     "C": 2228,
     "C#": 69,
@@ -19,7 +19,7 @@
     "JavaScript": 41028,
     "Mako": 42,
     "PowerShell": 3220,
-    "Python": 58508,
+    "Python": 58853,
     "Rust": 5284,
     "SCSS": 160,
     "Shell": 522,

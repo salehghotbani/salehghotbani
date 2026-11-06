@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="572" viewBox="0 0 1100 572" role="img" aria-labelledby="title desc">
 <title id="title">Languages I use</title>
-<desc id="desc">HTML: 225,124 lines; TypeScript: 127,212 lines; Python: 58,508 lines; JavaScript: 41,028 lines; Java: 25,870 lines; CSS: 21,872 lines; GDScript: 12,006 lines; Rust: 5,284 lines. Non-empty source lines (comments included). Bar lengths use a shared linear scale.</desc>
+<desc id="desc">HTML: 225,124 lines; TypeScript: 127,212 lines; Python: 58,853 lines; JavaScript: 41,028 lines; Java: 25,870 lines; CSS: 21,872 lines; GDScript: 12,006 lines; Rust: 5,284 lines. Non-empty source lines (comments included). Bar lengths use a shared linear scale.</desc>
 <rect x="1" y="1" width="1098" height="570" rx="22" fill="#0D1925" stroke="#263D4B"/>
 <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
 <text x="36" y="55" font-size="26" font-weight="700" fill="#F2F6FA">Source lines</text>
@@ -16,8 +16,8 @@
 <text x="1064" y="185" text-anchor="end" font-size="23" font-weight="600" fill="#65A9FF">127,212</text>
 <text x="36" y="242" font-size="21" fill="#E4EDF3">Python</text>
 <rect x="290" y="222" width="570" height="20" rx="5" fill="#1A2B38"/>
-<rect x="290" y="222" width="148.139" height="20" rx="5.000" fill="#69C99D"><title>Python: 58,508 lines</title></rect>
-<text x="1064" y="242" text-anchor="end" font-size="23" font-weight="600" fill="#69C99D">58,508</text>
+<rect x="290" y="222" width="149.012" height="20" rx="5.000" fill="#69C99D"><title>Python: 58,853 lines</title></rect>
+<text x="1064" y="242" text-anchor="end" font-size="23" font-weight="600" fill="#69C99D">58,853</text>
 <text x="36" y="299" font-size="21" fill="#E4EDF3">JavaScript</text>
 <rect x="290" y="279" width="570" height="20" rx="5" fill="#1A2B38"/>
 <rect x="290" y="279" width="103.880" height="20" rx="5.000" fill="#F4D75E"><title>JavaScript: 41,028 lines</title></rect>
