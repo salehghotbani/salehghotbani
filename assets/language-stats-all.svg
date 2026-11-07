@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1199" viewBox="0 0 1100 1199" role="img" aria-labelledby="title desc">
 <title id="title">Languages I use</title>
-<desc id="desc">HTML: 225,124 lines; TypeScript: 127,212 lines; Python: 58,853 lines; JavaScript: 41,028 lines; Java: 25,870 lines; CSS: 21,872 lines; GDScript: 12,006 lines; Rust: 5,284 lines; PowerShell: 3,220 lines; C++: 2,991 lines; C: 2,228 lines; TeX: 1,110 lines; Dockerfile: 598 lines; Shell: 522 lines; SCSS: 160 lines; C#: 69 lines; Swift: 63 lines; CMake: 60 lines; Mako: 42 lines. Non-empty source lines (comments included). Bar lengths use a shared linear scale.</desc>
+<desc id="desc">HTML: 225,203 lines; TypeScript: 132,806 lines; Python: 64,512 lines; JavaScript: 41,842 lines; Java: 26,058 lines; CSS: 23,132 lines; GDScript: 12,006 lines; Rust: 7,911 lines; PowerShell: 3,220 lines; C++: 2,991 lines; C: 2,228 lines; TeX: 1,110 lines; Dockerfile: 603 lines; Shell: 522 lines; SCSS: 160 lines; C#: 69 lines; Swift: 63 lines; CMake: 60 lines; Mako: 42 lines. Non-empty source lines (comments included). Bar lengths use a shared linear scale.</desc>
 <rect x="1" y="1" width="1098" height="1197" rx="22" fill="#0D1925" stroke="#263D4B"/>
 <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
 <text x="36" y="55" font-size="26" font-weight="700" fill="#F2F6FA">Source lines</text>
@@ -8,63 +8,63 @@
 <path d="M36 80H1064" stroke="#263D4B"/>
 <text x="36" y="128" font-size="21" fill="#E4EDF3">HTML</text>
 <rect x="290" y="108" width="570" height="20" rx="5" fill="#1A2B38"/>
-<rect x="290" y="108" width="570.000" height="20" rx="5.000" fill="#FF786A"><title>HTML: 225,124 lines</title></rect>
-<text x="1064" y="128" text-anchor="end" font-size="23" font-weight="600" fill="#FF786A">225,124</text>
+<rect x="290" y="108" width="570.000" height="20" rx="5.000" fill="#FF786A"><title>HTML: 225,203 lines</title></rect>
+<text x="1064" y="128" text-anchor="end" font-size="23" font-weight="600" fill="#FF786A">225,203</text>
 <text x="36" y="185" font-size="21" fill="#E4EDF3">TypeScript</text>
 <rect x="290" y="165" width="570" height="20" rx="5" fill="#1A2B38"/>
-<rect x="290" y="165" width="322.093" height="20" rx="5.000" fill="#65A9FF"><title>TypeScript: 127,212 lines</title></rect>
-<text x="1064" y="185" text-anchor="end" font-size="23" font-weight="600" fill="#65A9FF">127,212</text>
+<rect x="290" y="165" width="336.139" height="20" rx="5.000" fill="#65A9FF"><title>TypeScript: 132,806 lines</title></rect>
+<text x="1064" y="185" text-anchor="end" font-size="23" font-weight="600" fill="#65A9FF">132,806</text>
 <text x="36" y="242" font-size="21" fill="#E4EDF3">Python</text>
 <rect x="290" y="222" width="570" height="20" rx="5" fill="#1A2B38"/>
-<rect x="290" y="222" width="149.012" height="20" rx="5.000" fill="#69C99D"><title>Python: 58,853 lines</title></rect>
-<text x="1064" y="242" text-anchor="end" font-size="23" font-weight="600" fill="#69C99D">58,853</text>
+<rect x="290" y="222" width="163.283" height="20" rx="5.000" fill="#69C99D"><title>Python: 64,512 lines</title></rect>
+<text x="1064" y="242" text-anchor="end" font-size="23" font-weight="600" fill="#69C99D">64,512</text>
 <text x="36" y="299" font-size="21" fill="#E4EDF3">JavaScript</text>
 <rect x="290" y="279" width="570" height="20" rx="5" fill="#1A2B38"/>
-<rect x="290" y="279" width="103.880" height="20" rx="5.000" fill="#F4D75E"><title>JavaScript: 41,028 lines</title></rect>
-<text x="1064" y="299" text-anchor="end" font-size="23" font-weight="600" fill="#F4D75E">41,028</text>
+<rect x="290" y="279" width="105.904" height="20" rx="5.000" fill="#F4D75E"><title>JavaScript: 41,842 lines</title></rect>
+<text x="1064" y="299" text-anchor="end" font-size="23" font-weight="600" fill="#F4D75E">41,842</text>
 <text x="36" y="356" font-size="21" fill="#E4EDF3">Java</text>
 <rect x="290" y="336" width="570" height="20" rx="5" fill="#1A2B38"/>
-<rect x="290" y="336" width="65.501" height="20" rx="5.000" fill="#C69B60"><title>Java: 25,870 lines</title></rect>
-<text x="1064" y="356" text-anchor="end" font-size="23" font-weight="600" fill="#C69B60">25,870</text>
+<rect x="290" y="336" width="65.954" height="20" rx="5.000" fill="#C69B60"><title>Java: 26,058 lines</title></rect>
+<text x="1064" y="356" text-anchor="end" font-size="23" font-weight="600" fill="#C69B60">26,058</text>
 <text x="36" y="413" font-size="21" fill="#E4EDF3">CSS</text>
 <rect x="290" y="393" width="570" height="20" rx="5" fill="#1A2B38"/>
-<rect x="290" y="393" width="55.379" height="20" rx="5.000" fill="#DE8CDA"><title>CSS: 21,872 lines</title></rect>
-<text x="1064" y="413" text-anchor="end" font-size="23" font-weight="600" fill="#DE8CDA">21,872</text>
+<rect x="290" y="393" width="58.548" height="20" rx="5.000" fill="#DE8CDA"><title>CSS: 23,132 lines</title></rect>
+<text x="1064" y="413" text-anchor="end" font-size="23" font-weight="600" fill="#DE8CDA">23,132</text>
 <text x="36" y="470" font-size="21" fill="#E4EDF3">GDScript</text>
 <rect x="290" y="450" width="570" height="20" rx="5" fill="#1A2B38"/>
-<rect x="290" y="450" width="30.398" height="20" rx="5.000" fill="#79B8DB"><title>GDScript: 12,006 lines</title></rect>
+<rect x="290" y="450" width="30.388" height="20" rx="5.000" fill="#79B8DB"><title>GDScript: 12,006 lines</title></rect>
 <text x="1064" y="470" text-anchor="end" font-size="23" font-weight="600" fill="#79B8DB">12,006</text>
 <text x="36" y="527" font-size="21" fill="#E4EDF3">Rust</text>
 <rect x="290" y="507" width="570" height="20" rx="5" fill="#1A2B38"/>
-<rect x="290" y="507" width="13.379" height="20" rx="5.000" fill="#DBAB8C"><title>Rust: 5,284 lines</title></rect>
-<text x="1064" y="527" text-anchor="end" font-size="23" font-weight="600" fill="#DBAB8C">5,284</text>
+<rect x="290" y="507" width="20.023" height="20" rx="5.000" fill="#DBAB8C"><title>Rust: 7,911 lines</title></rect>
+<text x="1064" y="527" text-anchor="end" font-size="23" font-weight="600" fill="#DBAB8C">7,911</text>
 <text x="36" y="584" font-size="21" fill="#E4EDF3">PowerShell</text>
 <rect x="290" y="564" width="570" height="20" rx="5" fill="#1A2B38"/>
-<rect x="290" y="564" width="8.153" height="20" rx="4.076" fill="#B49CFF"><title>PowerShell: 3,220 lines</title></rect>
+<rect x="290" y="564" width="8.150" height="20" rx="4.075" fill="#B49CFF"><title>PowerShell: 3,220 lines</title></rect>
 <text x="1064" y="584" text-anchor="end" font-size="23" font-weight="600" fill="#B49CFF">3,220</text>
 <text x="36" y="641" font-size="21" fill="#E4EDF3">C++</text>
 <rect x="290" y="621" width="570" height="20" rx="5" fill="#1A2B38"/>
-<rect x="290" y="621" width="7.573" height="20" rx="3.787" fill="#F19BC1"><title>C++: 2,991 lines</title></rect>
+<rect x="290" y="621" width="7.570" height="20" rx="3.785" fill="#F19BC1"><title>C++: 2,991 lines</title></rect>
 <text x="1064" y="641" text-anchor="end" font-size="23" font-weight="600" fill="#F19BC1">2,991</text>
 <text x="36" y="698" font-size="21" fill="#E4EDF3">C</text>
 <rect x="290" y="678" width="570" height="20" rx="5" fill="#1A2B38"/>
-<rect x="290" y="678" width="5.641" height="20" rx="2.821" fill="#CBD5E1"><title>C: 2,228 lines</title></rect>
+<rect x="290" y="678" width="5.639" height="20" rx="2.820" fill="#CBD5E1"><title>C: 2,228 lines</title></rect>
 <text x="1064" y="698" text-anchor="end" font-size="23" font-weight="600" fill="#CBD5E1">2,228</text>
 <text x="36" y="755" font-size="21" fill="#E4EDF3">TeX</text>
 <rect x="290" y="735" width="570" height="20" rx="5" fill="#1A2B38"/>
-<rect x="290" y="735" width="2.810" height="20" rx="1.405" fill="#92BD7E"><title>TeX: 1,110 lines</title></rect>
+<rect x="290" y="735" width="2.809" height="20" rx="1.405" fill="#92BD7E"><title>TeX: 1,110 lines</title></rect>
 <text x="1064" y="755" text-anchor="end" font-size="23" font-weight="600" fill="#92BD7E">1,110</text>
 <text x="36" y="812" font-size="21" fill="#E4EDF3">Dockerfile</text>
 <rect x="290" y="792" width="570" height="20" rx="5" fill="#1A2B38"/>
-<rect x="290" y="792" width="1.514" height="20" rx="0.757" fill="#65D4CE"><title>Dockerfile: 598 lines</title></rect>
-<text x="1064" y="812" text-anchor="end" font-size="23" font-weight="600" fill="#65D4CE">598</text>
+<rect x="290" y="792" width="1.526" height="20" rx="0.763" fill="#65D4CE"><title>Dockerfile: 603 lines</title></rect>
+<text x="1064" y="812" text-anchor="end" font-size="23" font-weight="600" fill="#65D4CE">603</text>
 <text x="36" y="869" font-size="21" fill="#E4EDF3">Shell</text>
 <rect x="290" y="849" width="570" height="20" rx="5" fill="#1A2B38"/>
-<rect x="290" y="849" width="1.322" height="20" rx="0.661" fill="#B5CD78"><title>Shell: 522 lines</title></rect>
+<rect x="290" y="849" width="1.321" height="20" rx="0.661" fill="#B5CD78"><title>Shell: 522 lines</title></rect>
 <text x="1064" y="869" text-anchor="end" font-size="23" font-weight="600" fill="#B5CD78">522</text>
 <text x="36" y="926" font-size="21" fill="#E4EDF3">SCSS</text>
 <rect x="290" y="906" width="570" height="20" rx="5" fill="#1A2B38"/>
-<rect x="290" y="906" width="0.405" height="20" rx="0.203" fill="#CF8EC4"><title>SCSS: 160 lines</title></rect>
+<rect x="290" y="906" width="0.405" height="20" rx="0.202" fill="#CF8EC4"><title>SCSS: 160 lines</title></rect>
 <text x="1064" y="926" text-anchor="end" font-size="23" font-weight="600" fill="#CF8EC4">160</text>
 <text x="36" y="983" font-size="21" fill="#E4EDF3">C#</text>
 <rect x="290" y="963" width="570" height="20" rx="5" fill="#1A2B38"/>
@@ -72,7 +72,7 @@
 <text x="1064" y="983" text-anchor="end" font-size="23" font-weight="600" fill="#C8A2F2">69</text>
 <text x="36" y="1040" font-size="21" fill="#E4EDF3">Swift</text>
 <rect x="290" y="1020" width="570" height="20" rx="5" fill="#1A2B38"/>
-<rect x="290" y="1020" width="0.160" height="20" rx="0.080" fill="#F5A374"><title>Swift: 63 lines</title></rect>
+<rect x="290" y="1020" width="0.159" height="20" rx="0.080" fill="#F5A374"><title>Swift: 63 lines</title></rect>
 <text x="1064" y="1040" text-anchor="end" font-size="23" font-weight="600" fill="#F5A374">63</text>
 <text x="36" y="1097" font-size="21" fill="#E4EDF3">CMake</text>
 <rect x="290" y="1077" width="570" height="20" rx="5" fill="#1A2B38"/>
