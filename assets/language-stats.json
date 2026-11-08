@@ -1,30 +1,30 @@
 {
   "schema_version": 2,
   "user": "salehghotbani",
-  "retrieved_at": "2026-11-07T06:06:21+00:00",
+  "retrieved_at": "2026-11-08T06:10:11+00:00",
   "metric": "Non-empty source lines (comments included)",
   "scope": "Owned repositories; public forks and profile repository excluded",
   "visibility": "public_and_authorized_private",
-  "repository_count": 48,
+  "repository_count": 50,
   "languages": {
     "C": 2228,
     "C#": 69,
     "C++": 2991,
     "CMake": 60,
-    "CSS": 23132,
+    "CSS": 24977,
     "Dockerfile": 603,
     "GDScript": 12006,
-    "HTML": 225203,
+    "HTML": 226423,
     "Java": 26058,
-    "JavaScript": 41842,
+    "JavaScript": 42366,
     "Mako": 42,
     "PowerShell": 3220,
-    "Python": 64512,
+    "Python": 64516,
     "Rust": 7911,
     "SCSS": 160,
     "Shell": 522,
     "Swift": 63,
     "TeX": 1110,
-    "TypeScript": 132806
+    "TypeScript": 136144
   }
 }
