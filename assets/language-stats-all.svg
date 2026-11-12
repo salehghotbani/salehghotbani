@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1199" viewBox="0 0 1100 1199" role="img" aria-labelledby="title desc">
 <title id="title">Languages I use</title>
-<desc id="desc">HTML: 226,509 lines; TypeScript: 137,993 lines; Python: 68,023 lines; JavaScript: 42,652 lines; Java: 26,058 lines; CSS: 26,040 lines; GDScript: 11,823 lines; Rust: 7,911 lines; PowerShell: 3,385 lines; C++: 2,991 lines; C: 2,228 lines; TeX: 1,110 lines; Dockerfile: 604 lines; C#: 558 lines; Shell: 540 lines; SCSS: 160 lines; Swift: 63 lines; CMake: 60 lines; Mako: 42 lines. Non-empty source lines (comments included). Bar lengths use a shared linear scale.</desc>
+<desc id="desc">HTML: 226,509 lines; TypeScript: 137,993 lines; Python: 68,104 lines; JavaScript: 42,652 lines; Java: 26,058 lines; CSS: 26,040 lines; GDScript: 11,823 lines; Rust: 7,911 lines; PowerShell: 3,385 lines; C++: 2,991 lines; C: 2,228 lines; TeX: 1,110 lines; Dockerfile: 604 lines; C#: 558 lines; Shell: 540 lines; SCSS: 160 lines; Swift: 63 lines; CMake: 60 lines; Mako: 42 lines. Non-empty source lines (comments included). Bar lengths use a shared linear scale.</desc>
 <rect x="1" y="1" width="1098" height="1197" rx="22" fill="#0D1925" stroke="#263D4B"/>
 <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
 <text x="36" y="55" font-size="26" font-weight="700" fill="#F2F6FA">Source lines</text>
@@ -16,8 +16,8 @@
 <text x="1064" y="185" text-anchor="end" font-size="23" font-weight="600" fill="#65A9FF">137,993</text>
 <text x="36" y="242" font-size="21" fill="#E4EDF3">Python</text>
 <rect x="290" y="222" width="570" height="20" rx="5" fill="#1A2B38"/>
-<rect x="290" y="222" width="171.177" height="20" rx="5.000" fill="#69C99D"><title>Python: 68,023 lines</title></rect>
-<text x="1064" y="242" text-anchor="end" font-size="23" font-weight="600" fill="#69C99D">68,023</text>
+<rect x="290" y="222" width="171.381" height="20" rx="5.000" fill="#69C99D"><title>Python: 68,104 lines</title></rect>
+<text x="1064" y="242" text-anchor="end" font-size="23" font-weight="600" fill="#69C99D">68,104</text>
 <text x="36" y="299" font-size="21" fill="#E4EDF3">JavaScript</text>
 <rect x="290" y="279" width="570" height="20" rx="5" fill="#1A2B38"/>
 <rect x="290" y="279" width="107.332" height="20" rx="5.000" fill="#F4D75E"><title>JavaScript: 42,652 lines</title></rect>

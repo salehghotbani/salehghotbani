@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "user": "salehghotbani",
-  "retrieved_at": "2026-11-11T06:33:46+00:00",
+  "retrieved_at": "2026-11-12T07:19:23+00:00",
   "metric": "Non-empty source lines (comments included)",
   "scope": "Owned repositories; public forks and profile repository excluded",
   "visibility": "public_and_authorized_private",
@@ -19,7 +19,7 @@
     "JavaScript": 42652,
     "Mako": 42,
     "PowerShell": 3385,
-    "Python": 68023,
+    "Python": 68104,
     "Rust": 7911,
     "SCSS": 160,
     "Shell": 540,
