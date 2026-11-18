@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="542" viewBox="0 0 1100 542" role="img" aria-labelledby="title desc">
+<title id="title">Languages I use</title>
+<desc id="desc">HTML: 226,564 lines; TypeScript: 138,617 lines; Python: 71,093 lines; JavaScript: 43,186 lines; CSS: 26,167 lines; Java: 26,058 lines; GDScript: 12,412 lines; Rust: 7,911 lines. Non-empty source lines (comments included). Bar lengths use a shared linear scale.</desc>
+<rect x="1" y="1" width="1098" height="540" rx="16" fill="#F6F8FC" stroke="#DFE5EE"/>
+<g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<text x="36" y="52" font-size="25" font-weight="600" fill="#1C2C44">Source lines</text>
+<text x="1064" y="52" text-anchor="end" font-size="14" letter-spacing="1.7" fill="#64748B">TOP 8 LANGUAGES</text>
+<path d="M36 76H1064" stroke="#DFE5EE"/>
+<circle cx="42" cy="116" r="4" fill="#FF786A"/>
+<text x="58" y="123" font-size="21" fill="#1C2C44">HTML</text>
+<rect x="290" y="108" width="570" height="14" rx="4" fill="#E4EAF3"/>
+<rect x="290" y="108" width="570.000" height="14" rx="4.000" fill="#365F9F"><title>HTML: 226,564 lines</title></rect>
+<text x="1064" y="123" text-anchor="end" font-size="22" font-weight="600" fill="#1C2C44" style="font-variant-numeric:tabular-nums">226,564</text>
+<circle cx="42" cy="170" r="4" fill="#65A9FF"/>
+<text x="58" y="177" font-size="21" fill="#1C2C44">TypeScript</text>
+<rect x="290" y="162" width="570" height="14" rx="4" fill="#E4EAF3"/>
+<rect x="290" y="162" width="348.739" height="14" rx="4.000" fill="#365F9F"><title>TypeScript: 138,617 lines</title></rect>
+<text x="1064" y="177" text-anchor="end" font-size="22" font-weight="600" fill="#1C2C44" style="font-variant-numeric:tabular-nums">138,617</text>
+<circle cx="42" cy="224" r="4" fill="#69C99D"/>
+<text x="58" y="231" font-size="21" fill="#1C2C44">Python</text>
+<rect x="290" y="216" width="570" height="14" rx="4" fill="#E4EAF3"/>
+<rect x="290" y="216" width="178.859" height="14" rx="4.000" fill="#365F9F"><title>Python: 71,093 lines</title></rect>
+<text x="1064" y="231" text-anchor="end" font-size="22" font-weight="600" fill="#1C2C44" style="font-variant-numeric:tabular-nums">71,093</text>
+<circle cx="42" cy="278" r="4" fill="#F4D75E"/>
+<text x="58" y="285" font-size="21" fill="#1C2C44">JavaScript</text>
+<rect x="290" y="270" width="570" height="14" rx="4" fill="#E4EAF3"/>
+<rect x="290" y="270" width="108.649" height="14" rx="4.000" fill="#365F9F"><title>JavaScript: 43,186 lines</title></rect>
+<text x="1064" y="285" text-anchor="end" font-size="22" font-weight="600" fill="#1C2C44" style="font-variant-numeric:tabular-nums">43,186</text>
+<circle cx="42" cy="332" r="4" fill="#DE8CDA"/>
+<text x="58" y="339" font-size="21" fill="#1C2C44">CSS</text>
+<rect x="290" y="324" width="570" height="14" rx="4" fill="#E4EAF3"/>
+<rect x="290" y="324" width="65.832" height="14" rx="4.000" fill="#365F9F"><title>CSS: 26,167 lines</title></rect>
+<text x="1064" y="339" text-anchor="end" font-size="22" font-weight="600" fill="#1C2C44" style="font-variant-numeric:tabular-nums">26,167</text>
+<circle cx="42" cy="386" r="4" fill="#C69B60"/>
+<text x="58" y="393" font-size="21" fill="#1C2C44">Java</text>
+<rect x="290" y="378" width="570" height="14" rx="4" fill="#E4EAF3"/>
+<rect x="290" y="378" width="65.558" height="14" rx="4.000" fill="#365F9F"><title>Java: 26,058 lines</title></rect>
+<text x="1064" y="393" text-anchor="end" font-size="22" font-weight="600" fill="#1C2C44" style="font-variant-numeric:tabular-nums">26,058</text>
+<circle cx="42" cy="440" r="4" fill="#79B8DB"/>
+<text x="58" y="447" font-size="21" fill="#1C2C44">GDScript</text>
+<rect x="290" y="432" width="570" height="14" rx="4" fill="#E4EAF3"/>
+<rect x="290" y="432" width="31.227" height="14" rx="4.000" fill="#365F9F"><title>GDScript: 12,412 lines</title></rect>
+<text x="1064" y="447" text-anchor="end" font-size="22" font-weight="600" fill="#1C2C44" style="font-variant-numeric:tabular-nums">12,412</text>
+<circle cx="42" cy="494" r="4" fill="#DBAB8C"/>
+<text x="58" y="501" font-size="21" fill="#1C2C44">Rust</text>
+<rect x="290" y="486" width="570" height="14" rx="4" fill="#E4EAF3"/>
+<rect x="290" y="486" width="19.903" height="14" rx="4.000" fill="#365F9F"><title>Rust: 7,911 lines</title></rect>
+<text x="1064" y="501" text-anchor="end" font-size="22" font-weight="600" fill="#1C2C44" style="font-variant-numeric:tabular-nums">7,911</text>
+</g>
+</svg>

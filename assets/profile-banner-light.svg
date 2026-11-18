@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" fill="none" role="img" aria-labelledby="title desc">
+<title id="title">Saleh Ghotbani</title>
+<desc id="desc">AI research and software development. Computer vision, deep learning, interactive systems.</desc>
+<rect x="1" y="1" width="1198" height="298" rx="16" fill="#F6F8FC" stroke="#DFE5EE"/>
+<g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<text x="48" y="48" fill="#586B85" font-size="13" letter-spacing="3" font-weight="600">RESEARCH &amp; DEVELOPMENT</text>
+<rect x="48" y="88" width="3" height="50" rx="1.5" fill="#365F9F"/>
+<text x="70" y="135" fill="#1C2C44" font-size="58" letter-spacing="-1.8" font-weight="700">Saleh Ghotbani</text>
+<text x="48" y="183" fill="#586B85" font-size="24">AI research &amp; software development</text>
+<path d="M48 218H739" stroke="#DFE5EE"/>
+<text x="48" y="254" fill="#586B85" font-size="15">Computer vision<tspan dx="24" fill="#365F9F">/</tspan><tspan dx="24" fill="#586B85">Deep learning</tspan><tspan dx="24" fill="#365F9F">/</tspan><tspan dx="24" fill="#586B85">Interactive systems</tspan></text>
+</g>
+<g stroke="#CFDAEA" stroke-width="1.2">
+<path d="M870 56H1140M870 101H1140M870 146H1140M870 191H1140M870 236H1140M915 32V260M960 32V260M1005 32V260M1050 32V260M1095 32V260" stroke-opacity=".45"/>
+<rect x="892" y="62" width="180" height="180" rx="8"/>
+<rect x="937" y="107" width="135" height="135" rx="6" stroke="#365F9F" stroke-opacity=".8"/>
+<path d="M892 107H1027V242M937 62V197H1072"/>
+</g>
+<g fill="#365F9F"><circle cx="937" cy="107" r="4"/><circle cx="1072" cy="197" r="4"/><circle cx="1027" cy="242" r="4"/></g>
+</svg>

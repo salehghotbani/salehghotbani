@@ -1,40 +1,49 @@
 <p align="center">
-  <img src="assets/profile-banner.svg" width="100%" alt="Saleh Ghotbani — AI research, computer vision, and interactive web development" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/profile-banner.svg" />
+    <img src="assets/profile-banner-light.svg" width="100%" alt="Saleh Ghotbani — AI research and software development" />
+  </picture>
 </p>
 
-<p align="center">
-  <a href="https://github.com/salehghotbani?tab=repositories">Explore my repositories</a>
-</p>
+## About
 
-## A little about me
+I'm **Saleh Ghotbani**, a researcher and software developer. My work spans **deep learning**, **computer vision**, and **interactive applications**.
 
-I'm **Saleh Ghotbani**, a researcher and web developer working with deep learning, computer vision, and interactive applications.
-
-## Languages I use
+## Code overview
 
 <p align="center">
-  <img src="assets/language-stats.svg" width="100%" alt="Most used languages, ranked by the aggregate source measurement indicated in the chart." />
+  <picture>
+    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/language-stats-mobile.svg" />
+    <source media="(max-width: 600px)" srcset="assets/language-stats-mobile-light.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="assets/language-stats.svg" />
+    <img src="assets/language-stats-light.svg" width="100%" alt="Most used languages, measured in source lines." />
+  </picture>
 </p>
 
 <details>
-<summary>All languages</summary>
+<summary>View all languages</summary>
 
 <p align="center">
-  <img src="assets/language-stats-all.svg" width="100%" alt="Full language breakdown with absolute counts." />
+  <picture>
+    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/language-stats-all-mobile.svg" />
+    <source media="(max-width: 600px)" srcset="assets/language-stats-all-mobile-light.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="assets/language-stats-all.svg" />
+    <img src="assets/language-stats-all-light.svg" width="100%" alt="Full language breakdown with source line counts." />
+  </picture>
 </p>
 
 </details>
 
-## Tools I work with
+## Technical toolkit
 
-**AI & data** &nbsp; Python · PyTorch · YOLO · Jupyter
-
-**Web** &nbsp; React · TypeScript · Three.js · FastAPI
-
-**Games & applications** &nbsp; Java · JavaScript · Android
+| Area | Technologies |
+| :--- | :--- |
+| **AI & computer vision** | `Python` · `PyTorch` · `YOLO` · `Jupyter` |
+| **Web & interactive systems** | `React` · `TypeScript` · `Three.js` · `FastAPI` |
+| **Applications & games** | `Java` · `JavaScript` · `Android` |
 
 ---
 
 <p align="center">
-  <a href="https://github.com/salehghotbani?tab=repositories">More code, experiments, and projects ↗</a>
+  <a href="https://github.com/salehghotbani?tab=repositories"><strong>Explore repositories →</strong></a>
 </p>

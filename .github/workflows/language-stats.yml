@@ -44,16 +44,21 @@ jobs:
         run: python -B -m unittest discover -s tests
 
       - name: Fetch aggregate language data and regenerate the chart
+        if: github.event_name != 'push'
         env:
           GH_TOKEN: ${{ github.token }}
           LANGUAGE_STATS_TOKEN: ${{ secrets.LANGUAGE_STATS_TOKEN }}
           LANGUAGE_STATS_METRIC: ${{ inputs.metric || vars.LANGUAGE_STATS_METRIC || 'auto' }}
         run: python scripts/update-language-stats.py
 
+      - name: Render design changes using the last complete statistics
+        if: github.event_name == 'push'
+        run: python scripts/update-language-stats.py --from-snapshot
+
       - name: Publish changed language data
         shell: bash
         run: |
-          git add -- assets/language-stats.json assets/language-stats.svg assets/language-stats-all.svg
+          git add -- assets/language-stats.json assets/language-stats*.svg
           if git diff --cached --quiet; then
             echo "Language data is unchanged."
             exit 0

@@ -123,7 +123,7 @@ def normalize_snapshot(snapshot):
     }
 
 
-def render_chart(snapshot, *, all_languages=False):
+def render_chart(snapshot, *, all_languages=False, theme='dark', compact=False):
     totals = Counter(snapshot["languages"])
     totals = Counter({name: size for name, size in totals.items() if size > 0})
     if not sum(totals.values()):
@@ -133,22 +133,31 @@ def render_chart(snapshot, *, all_languages=False):
     lines = snapshot['metric'].startswith('Non-empty source lines')
     unit = 'lines' if lines else 'bytes'
     heading = 'Source lines' if lines else 'Source size (bytes)'
-    height = 116 + 57 * len(languages)
+    canvas = 640 if compact else 1100
+    right = canvas - 36
+    height = 110 + (78 if compact else 54) * len(languages)
+    palette = {
+        'dark': {'bg':'#101826', 'border':'#283448', 'ink':'#E9EEF7', 'muted':'#94A3B8', 'track':'#202D41', 'accent':'#82ACF4'},
+        'light': {'bg':'#F6F8FC', 'border':'#DFE5EE', 'ink':'#1C2C44', 'muted':'#64748B', 'track':'#E4EAF3', 'accent':'#365F9F'},
+    }[theme]
     description = '; '.join(f'{name}: {size:,} {unit}' for name, size in languages)
     maximum = max(totals.values())
+    bar_x = 36 if compact else 290
+    bar_width = 568 if compact else 570
     parts = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="{height}" viewBox="0 0 1100 {height}" role="img" aria-labelledby="title desc">',
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{canvas}" height="{height}" viewBox="0 0 {canvas} {height}" role="img" aria-labelledby="title desc">',
         '<title id="title">Languages I use</title>',
         f'<desc id="desc">{escape(description)}. {escape(snapshot["metric"])}. Bar lengths use a shared linear scale.</desc>',
-        f'<rect x="1" y="1" width="1098" height="{height - 2}" rx="22" fill="#0D1925" stroke="#263D4B"/>',
+        f'<rect x="1" y="1" width="{canvas - 2}" height="{height - 2}" rx="16" fill="{palette["bg"]}" stroke="{palette["border"]}"/>',
         '<g font-family="Segoe UI, Helvetica, Arial, sans-serif">',
-        f'<text x="36" y="55" font-size="26" font-weight="700" fill="#F2F6FA">{heading}</text>',
-        f'<text x="1064" y="55" text-anchor="end" font-size="15" letter-spacing="2" fill="#91E5CD">{"ALL LANGUAGES" if all_languages else "MOST USED"}</text>',
-        '<path d="M36 80H1064" stroke="#263D4B"/>',
+        f'<text x="36" y="52" font-size="25" font-weight="600" fill="{palette["ink"]}">{heading}</text>',
+        f'<text x="{right}" y="52" text-anchor="end" font-size="14" letter-spacing="1.7" fill="{palette["muted"]}">{"ALL LANGUAGES" if all_languages else "TOP 8 LANGUAGES"}</text>',
+        f'<path d="M36 76H{right}" stroke="{palette["border"]}"/>',
     ]
     for index, (name, size) in enumerate(languages):
-        y = 121 + index * 57
-        width = 570 * size / maximum
+        y = 116 + index * (78 if compact else 54)
+        bar_y = y + 22 if compact else y - 8
+        width = bar_width * size / maximum
         if name in COLORS:
             color = COLORS[name]
         else:
@@ -157,10 +166,11 @@ def render_chart(snapshot, *, all_languages=False):
             color = '#%02X%02X%02X' % tuple(round(v * 255) for v in colorsys.hls_to_rgb(hue, .72, .6))
         label = escape(name)
         parts += [
-            f'<text x="36" y="{y + 7}" font-size="21" fill="#E4EDF3">{label}</text>',
-            f'<rect x="290" y="{y - 13}" width="570" height="20" rx="5" fill="#1A2B38"/>',
-            f'<rect x="290" y="{y - 13}" width="{width:.3f}" height="20" rx="{min(5, width / 2):.3f}" fill="{color}"><title>{label}: {size:,} {unit}</title></rect>',
-            f'<text x="1064" y="{y + 7}" text-anchor="end" font-size="23" font-weight="600" fill="{color}">{size:,}</text>',
+            f'<circle cx="42" cy="{y}" r="4" fill="{color}"/>',
+            f'<text x="58" y="{y + 7}" font-size="21" fill="{palette["ink"]}">{label}</text>',
+            f'<rect x="{bar_x}" y="{bar_y}" width="{bar_width}" height="14" rx="4" fill="{palette["track"]}"/>',
+            f'<rect x="{bar_x}" y="{bar_y}" width="{width:.3f}" height="14" rx="{min(4, width / 2):.3f}" fill="{palette["accent"]}"><title>{label}: {size:,} {unit}</title></rect>',
+            f'<text x="{right}" y="{y + 7}" text-anchor="end" font-size="22" font-weight="600" fill="{palette["ink"]}" style="font-variant-numeric:tabular-nums">{size:,}</text>',
         ]
     parts += [
         '</g>',
@@ -199,6 +209,13 @@ def main():
     changed = write_if_changed(SNAPSHOT, json.dumps(snapshot, indent=2) + "\n")
     changed = write_if_changed(CHART, svg) or changed
     changed = write_if_changed(CHART.with_name('language-stats-all.svg'), render_chart(snapshot, all_languages=True)) or changed
+    changed = write_if_changed(CHART.with_name('language-stats-light.svg'), render_chart(snapshot, theme='light')) or changed
+    changed = write_if_changed(CHART.with_name('language-stats-all-light.svg'), render_chart(snapshot, all_languages=True, theme='light')) or changed
+    for theme in ('dark', 'light'):
+        suffix = '' if theme == 'dark' else '-light'
+        for full in (False, True):
+            name = 'language-stats' + ('-all' if full else '') + '-mobile' + suffix + '.svg'
+            changed = write_if_changed(CHART.with_name(name), render_chart(snapshot, all_languages=full, theme=theme, compact=True)) or changed
     status = "Updated" if changed else "Unchanged"
     print(f"{status}: {CHART.relative_to(ROOT)} (aggregate language statistics).")
 

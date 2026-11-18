@@ -159,6 +159,16 @@ class RefreshTests(unittest.TestCase):
         self.assertNotIn('not proficiency', svg)
         self.assertIn('Language-0: 1 bytes', stats.render_chart(snapshot, all_languages=True))
 
+    def test_theme_and_mobile_variants_preserve_absolute_counts(self):
+        import xml.etree.ElementTree as ET
+        for theme in ('dark', 'light'):
+            for compact in (False, True):
+                svg = stats.render_chart(self.data, theme=theme, compact=compact)
+                root = ET.fromstring(svg)
+                self.assertEqual(root.attrib['width'], '640' if compact else '1100')
+                self.assertIn('Python: 100 bytes', svg)
+                self.assertNotIn('Updated ', svg)
+
     def test_private_repository_pagination(self):
         repos = [self.repo(f"private-project-{index}", private=True, fork=index % 2 == 0) for index in range(237)]
         pages = []
