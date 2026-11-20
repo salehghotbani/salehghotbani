@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="734" viewBox="0 0 640 734" role="img" aria-labelledby="title desc">
 <title id="title">Languages I use</title>
-<desc id="desc">HTML: 226,627 lines; TypeScript: 138,722 lines; Python: 73,538 lines; JavaScript: 47,925 lines; CSS: 26,230 lines; Java: 26,058 lines; GDScript: 12,622 lines; Rust: 8,032 lines. Non-empty source lines (comments included). Bar lengths use a shared linear scale.</desc>
+<desc id="desc">HTML: 226,627 lines; TypeScript: 138,725 lines; Python: 72,587 lines; JavaScript: 47,884 lines; CSS: 26,230 lines; Java: 26,058 lines; GDScript: 13,235 lines; Rust: 8,032 lines. Non-empty source lines (comments included). Bar lengths use a shared linear scale.</desc>
 <rect x="1" y="1" width="638" height="732" rx="16" fill="#101826" stroke="#283448"/>
 <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
 <text x="36" y="52" font-size="25" font-weight="600" fill="#E9EEF7">Source lines</text>
@@ -14,18 +14,18 @@
 <circle cx="42" cy="194" r="4" fill="#65A9FF"/>
 <text x="58" y="201" font-size="21" fill="#E9EEF7">TypeScript</text>
 <rect x="36" y="216" width="568" height="14" rx="4" fill="#202D41"/>
-<rect x="36" y="216" width="347.682" height="14" rx="4.000" fill="#82ACF4"><title>TypeScript: 138,722 lines</title></rect>
-<text x="604" y="201" text-anchor="end" font-size="22" font-weight="600" fill="#E9EEF7" style="font-variant-numeric:tabular-nums">138,722</text>
+<rect x="36" y="216" width="347.689" height="14" rx="4.000" fill="#82ACF4"><title>TypeScript: 138,725 lines</title></rect>
+<text x="604" y="201" text-anchor="end" font-size="22" font-weight="600" fill="#E9EEF7" style="font-variant-numeric:tabular-nums">138,725</text>
 <circle cx="42" cy="272" r="4" fill="#69C99D"/>
 <text x="58" y="279" font-size="21" fill="#E9EEF7">Python</text>
 <rect x="36" y="294" width="568" height="14" rx="4" fill="#202D41"/>
-<rect x="36" y="294" width="184.310" height="14" rx="4.000" fill="#82ACF4"><title>Python: 73,538 lines</title></rect>
-<text x="604" y="279" text-anchor="end" font-size="22" font-weight="600" fill="#E9EEF7" style="font-variant-numeric:tabular-nums">73,538</text>
+<rect x="36" y="294" width="181.926" height="14" rx="4.000" fill="#82ACF4"><title>Python: 72,587 lines</title></rect>
+<text x="604" y="279" text-anchor="end" font-size="22" font-weight="600" fill="#E9EEF7" style="font-variant-numeric:tabular-nums">72,587</text>
 <circle cx="42" cy="350" r="4" fill="#F4D75E"/>
 <text x="58" y="357" font-size="21" fill="#E9EEF7">JavaScript</text>
 <rect x="36" y="372" width="568" height="14" rx="4" fill="#202D41"/>
-<rect x="36" y="372" width="120.115" height="14" rx="4.000" fill="#82ACF4"><title>JavaScript: 47,925 lines</title></rect>
-<text x="604" y="357" text-anchor="end" font-size="22" font-weight="600" fill="#E9EEF7" style="font-variant-numeric:tabular-nums">47,925</text>
+<rect x="36" y="372" width="120.013" height="14" rx="4.000" fill="#82ACF4"><title>JavaScript: 47,884 lines</title></rect>
+<text x="604" y="357" text-anchor="end" font-size="22" font-weight="600" fill="#E9EEF7" style="font-variant-numeric:tabular-nums">47,884</text>
 <circle cx="42" cy="428" r="4" fill="#DE8CDA"/>
 <text x="58" y="435" font-size="21" fill="#E9EEF7">CSS</text>
 <rect x="36" y="450" width="568" height="14" rx="4" fill="#202D41"/>
@@ -39,8 +39,8 @@
 <circle cx="42" cy="584" r="4" fill="#79B8DB"/>
 <text x="58" y="591" font-size="21" fill="#E9EEF7">GDScript</text>
 <rect x="36" y="606" width="568" height="14" rx="4" fill="#202D41"/>
-<rect x="36" y="606" width="31.635" height="14" rx="4.000" fill="#82ACF4"><title>GDScript: 12,622 lines</title></rect>
-<text x="604" y="591" text-anchor="end" font-size="22" font-weight="600" fill="#E9EEF7" style="font-variant-numeric:tabular-nums">12,622</text>
+<rect x="36" y="606" width="33.171" height="14" rx="4.000" fill="#82ACF4"><title>GDScript: 13,235 lines</title></rect>
+<text x="604" y="591" text-anchor="end" font-size="22" font-weight="600" fill="#E9EEF7" style="font-variant-numeric:tabular-nums">13,235</text>
 <circle cx="42" cy="662" r="4" fill="#DBAB8C"/>
 <text x="58" y="669" font-size="21" fill="#E9EEF7">Rust</text>
 <rect x="36" y="684" width="568" height="14" rx="4" fill="#202D41"/>
