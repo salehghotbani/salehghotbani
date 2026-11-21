@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="1592" viewBox="0 0 640 1592" role="img" aria-labelledby="title desc">
 <title id="title">Languages I use</title>
-<desc id="desc">HTML: 226,627 lines; TypeScript: 138,725 lines; Python: 72,587 lines; JavaScript: 47,884 lines; CSS: 26,230 lines; Java: 26,058 lines; GDScript: 13,235 lines; Rust: 8,032 lines; PowerShell: 4,811 lines; C#: 4,239 lines; C++: 2,991 lines; C: 2,228 lines; TeX: 1,215 lines; Shell: 645 lines; Dockerfile: 604 lines; SCSS: 160 lines; Swift: 63 lines; CMake: 60 lines; Mako: 42 lines. Non-empty source lines (comments included). Bar lengths use a shared linear scale.</desc>
+<desc id="desc">HTML: 226,627 lines; TypeScript: 139,144 lines; Python: 73,253 lines; JavaScript: 48,359 lines; CSS: 26,243 lines; Java: 26,058 lines; GDScript: 14,830 lines; Rust: 8,032 lines; PowerShell: 4,867 lines; C#: 4,239 lines; C++: 2,991 lines; C: 2,228 lines; TeX: 1,215 lines; Shell: 703 lines; Dockerfile: 604 lines; SCSS: 160 lines; Swift: 63 lines; CMake: 60 lines; Mako: 42 lines. Non-empty source lines (comments included). Bar lengths use a shared linear scale.</desc>
 <rect x="1" y="1" width="638" height="1590" rx="16" fill="#F6F8FC" stroke="#DFE5EE"/>
 <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
 <text x="36" y="52" font-size="25" font-weight="600" fill="#1C2C44">Source lines</text>
@@ -14,23 +14,23 @@
 <circle cx="42" cy="194" r="4" fill="#65A9FF"/>
 <text x="58" y="201" font-size="21" fill="#1C2C44">TypeScript</text>
 <rect x="36" y="216" width="568" height="14" rx="4" fill="#E4EAF3"/>
-<rect x="36" y="216" width="347.689" height="14" rx="4.000" fill="#365F9F"><title>TypeScript: 138,725 lines</title></rect>
-<text x="604" y="201" text-anchor="end" font-size="22" font-weight="600" fill="#1C2C44" style="font-variant-numeric:tabular-nums">138,725</text>
+<rect x="36" y="216" width="348.740" height="14" rx="4.000" fill="#365F9F"><title>TypeScript: 139,144 lines</title></rect>
+<text x="604" y="201" text-anchor="end" font-size="22" font-weight="600" fill="#1C2C44" style="font-variant-numeric:tabular-nums">139,144</text>
 <circle cx="42" cy="272" r="4" fill="#69C99D"/>
 <text x="58" y="279" font-size="21" fill="#1C2C44">Python</text>
 <rect x="36" y="294" width="568" height="14" rx="4" fill="#E4EAF3"/>
-<rect x="36" y="294" width="181.926" height="14" rx="4.000" fill="#365F9F"><title>Python: 72,587 lines</title></rect>
-<text x="604" y="279" text-anchor="end" font-size="22" font-weight="600" fill="#1C2C44" style="font-variant-numeric:tabular-nums">72,587</text>
+<rect x="36" y="294" width="183.596" height="14" rx="4.000" fill="#365F9F"><title>Python: 73,253 lines</title></rect>
+<text x="604" y="279" text-anchor="end" font-size="22" font-weight="600" fill="#1C2C44" style="font-variant-numeric:tabular-nums">73,253</text>
 <circle cx="42" cy="350" r="4" fill="#F4D75E"/>
 <text x="58" y="357" font-size="21" fill="#1C2C44">JavaScript</text>
 <rect x="36" y="372" width="568" height="14" rx="4" fill="#E4EAF3"/>
-<rect x="36" y="372" width="120.013" height="14" rx="4.000" fill="#365F9F"><title>JavaScript: 47,884 lines</title></rect>
-<text x="604" y="357" text-anchor="end" font-size="22" font-weight="600" fill="#1C2C44" style="font-variant-numeric:tabular-nums">47,884</text>
+<rect x="36" y="372" width="121.203" height="14" rx="4.000" fill="#365F9F"><title>JavaScript: 48,359 lines</title></rect>
+<text x="604" y="357" text-anchor="end" font-size="22" font-weight="600" fill="#1C2C44" style="font-variant-numeric:tabular-nums">48,359</text>
 <circle cx="42" cy="428" r="4" fill="#DE8CDA"/>
 <text x="58" y="435" font-size="21" fill="#1C2C44">CSS</text>
 <rect x="36" y="450" width="568" height="14" rx="4" fill="#E4EAF3"/>
-<rect x="36" y="450" width="65.741" height="14" rx="4.000" fill="#365F9F"><title>CSS: 26,230 lines</title></rect>
-<text x="604" y="435" text-anchor="end" font-size="22" font-weight="600" fill="#1C2C44" style="font-variant-numeric:tabular-nums">26,230</text>
+<rect x="36" y="450" width="65.773" height="14" rx="4.000" fill="#365F9F"><title>CSS: 26,243 lines</title></rect>
+<text x="604" y="435" text-anchor="end" font-size="22" font-weight="600" fill="#1C2C44" style="font-variant-numeric:tabular-nums">26,243</text>
 <circle cx="42" cy="506" r="4" fill="#C69B60"/>
 <text x="58" y="513" font-size="21" fill="#1C2C44">Java</text>
 <rect x="36" y="528" width="568" height="14" rx="4" fill="#E4EAF3"/>
@@ -39,8 +39,8 @@
 <circle cx="42" cy="584" r="4" fill="#79B8DB"/>
 <text x="58" y="591" font-size="21" fill="#1C2C44">GDScript</text>
 <rect x="36" y="606" width="568" height="14" rx="4" fill="#E4EAF3"/>
-<rect x="36" y="606" width="33.171" height="14" rx="4.000" fill="#365F9F"><title>GDScript: 13,235 lines</title></rect>
-<text x="604" y="591" text-anchor="end" font-size="22" font-weight="600" fill="#1C2C44" style="font-variant-numeric:tabular-nums">13,235</text>
+<rect x="36" y="606" width="37.169" height="14" rx="4.000" fill="#365F9F"><title>GDScript: 14,830 lines</title></rect>
+<text x="604" y="591" text-anchor="end" font-size="22" font-weight="600" fill="#1C2C44" style="font-variant-numeric:tabular-nums">14,830</text>
 <circle cx="42" cy="662" r="4" fill="#DBAB8C"/>
 <text x="58" y="669" font-size="21" fill="#1C2C44">Rust</text>
 <rect x="36" y="684" width="568" height="14" rx="4" fill="#E4EAF3"/>
@@ -49,8 +49,8 @@
 <circle cx="42" cy="740" r="4" fill="#B49CFF"/>
 <text x="58" y="747" font-size="21" fill="#1C2C44">PowerShell</text>
 <rect x="36" y="762" width="568" height="14" rx="4" fill="#E4EAF3"/>
-<rect x="36" y="762" width="12.058" height="14" rx="4.000" fill="#365F9F"><title>PowerShell: 4,811 lines</title></rect>
-<text x="604" y="747" text-anchor="end" font-size="22" font-weight="600" fill="#1C2C44" style="font-variant-numeric:tabular-nums">4,811</text>
+<rect x="36" y="762" width="12.198" height="14" rx="4.000" fill="#365F9F"><title>PowerShell: 4,867 lines</title></rect>
+<text x="604" y="747" text-anchor="end" font-size="22" font-weight="600" fill="#1C2C44" style="font-variant-numeric:tabular-nums">4,867</text>
 <circle cx="42" cy="818" r="4" fill="#C8A2F2"/>
 <text x="58" y="825" font-size="21" fill="#1C2C44">C#</text>
 <rect x="36" y="840" width="568" height="14" rx="4" fill="#E4EAF3"/>
@@ -74,8 +74,8 @@
 <circle cx="42" cy="1130" r="4" fill="#B5CD78"/>
 <text x="58" y="1137" font-size="21" fill="#1C2C44">Shell</text>
 <rect x="36" y="1152" width="568" height="14" rx="4" fill="#E4EAF3"/>
-<rect x="36" y="1152" width="1.617" height="14" rx="0.808" fill="#365F9F"><title>Shell: 645 lines</title></rect>
-<text x="604" y="1137" text-anchor="end" font-size="22" font-weight="600" fill="#1C2C44" style="font-variant-numeric:tabular-nums">645</text>
+<rect x="36" y="1152" width="1.762" height="14" rx="0.881" fill="#365F9F"><title>Shell: 703 lines</title></rect>
+<text x="604" y="1137" text-anchor="end" font-size="22" font-weight="600" fill="#1C2C44" style="font-variant-numeric:tabular-nums">703</text>
 <circle cx="42" cy="1208" r="4" fill="#65D4CE"/>
 <text x="58" y="1215" font-size="21" fill="#1C2C44">Dockerfile</text>
 <rect x="36" y="1230" width="568" height="14" rx="4" fill="#E4EAF3"/>
