@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "user": "salehghotbani",
-  "retrieved_at": "2026-11-23T07:47:01+00:00",
+  "retrieved_at": "2026-11-24T10:01:30+00:00",
   "metric": "Non-empty source lines (comments included)",
   "scope": "Owned repositories; public forks and profile repository excluded",
   "visibility": "public_and_authorized_private",
@@ -13,7 +13,7 @@
     "CMake": 60,
     "CSS": 26318,
     "Dockerfile": 604,
-    "GDScript": 15511,
+    "GDScript": 15964,
     "HTML": 226627,
     "Java": 26058,
     "JavaScript": 48362,
