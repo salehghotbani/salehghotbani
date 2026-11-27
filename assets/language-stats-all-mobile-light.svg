@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="1592" viewBox="0 0 640 1592" role="img" aria-labelledby="title desc">
 <title id="title">Languages I use</title>
-<desc id="desc">HTML: 226,627 lines; TypeScript: 139,671 lines; Python: 73,265 lines; JavaScript: 48,362 lines; CSS: 26,318 lines; Java: 26,058 lines; GDScript: 16,793 lines; Rust: 8,032 lines; PowerShell: 4,868 lines; C#: 4,239 lines; C++: 2,991 lines; C: 2,228 lines; TeX: 1,215 lines; Shell: 703 lines; Dockerfile: 604 lines; SCSS: 160 lines; Swift: 63 lines; CMake: 60 lines; Mako: 42 lines. Non-empty source lines (comments included). Bar lengths use a shared linear scale.</desc>
+<desc id="desc">HTML: 226,627 lines; TypeScript: 139,671 lines; Python: 73,265 lines; JavaScript: 48,362 lines; CSS: 26,318 lines; Java: 26,058 lines; GDScript: 17,577 lines; Rust: 8,032 lines; PowerShell: 4,868 lines; C#: 4,239 lines; C++: 2,991 lines; C: 2,228 lines; TeX: 1,215 lines; Shell: 703 lines; Dockerfile: 604 lines; SCSS: 160 lines; Swift: 63 lines; CMake: 60 lines; Mako: 42 lines. Non-empty source lines (comments included). Bar lengths use a shared linear scale.</desc>
 <rect x="1" y="1" width="638" height="1590" rx="16" fill="#F6F8FC" stroke="#DFE5EE"/>
 <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
 <text x="36" y="52" font-size="25" font-weight="600" fill="#1C2C44">Source lines</text>
@@ -39,8 +39,8 @@
 <circle cx="42" cy="584" r="4" fill="#79B8DB"/>
 <text x="58" y="591" font-size="21" fill="#1C2C44">GDScript</text>
 <rect x="36" y="606" width="568" height="14" rx="4" fill="#E4EAF3"/>
-<rect x="36" y="606" width="42.089" height="14" rx="4.000" fill="#365F9F"><title>GDScript: 16,793 lines</title></rect>
-<text x="604" y="591" text-anchor="end" font-size="22" font-weight="600" fill="#1C2C44" style="font-variant-numeric:tabular-nums">16,793</text>
+<rect x="36" y="606" width="44.054" height="14" rx="4.000" fill="#365F9F"><title>GDScript: 17,577 lines</title></rect>
+<text x="604" y="591" text-anchor="end" font-size="22" font-weight="600" fill="#1C2C44" style="font-variant-numeric:tabular-nums">17,577</text>
 <circle cx="42" cy="662" r="4" fill="#DBAB8C"/>
 <text x="58" y="669" font-size="21" fill="#1C2C44">Rust</text>
 <rect x="36" y="684" width="568" height="14" rx="4" fill="#E4EAF3"/>
